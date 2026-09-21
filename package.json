@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Praveen Rathee's portfolio of business analysis, forecasting, AI workflows and operational insight.",
   "engines": {
-    "node": "22.x"
+    "node": "24.x"
   },
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 4173 --strictPort",

@@ -37,9 +37,9 @@ An ongoing forecasting and decision-support study that connects market and macro
 
 ### Hershey Supply Chain AI
 
-An independent academic study of one chocolate bar, connecting ingredient research, public sources, modeled production and distribution, benchmark costs and retail observations. The source-processing and analytical work are presented separately from the ongoing frontend redesign. This is not a Hershey-affiliated or internal company system.
+An independent academic study of one chocolate bar, connecting ingredient research, public sources, modeled production and distribution, benchmark costs and retail observations. The deployed interface connects the source-processing and analytical work to supply-chain, cost and methodology views. This is not a Hershey-affiliated or internal company system.
 
-[Existing project website](https://hershey-supply-chain-ai.vercel.app/) · [GitHub repository](https://github.com/rathee000001/hershey-supply-chain-ai)
+[Live project website](https://hershey-supply-chain-ai.vercel.app/) · [GitHub repository](https://github.com/rathee000001/hershey-supply-chain-ai)
 
 ## Inspect the original work
 

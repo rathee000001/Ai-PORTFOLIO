@@ -25,3 +25,6 @@ export default function StoryRouter(){
 import './dimensionalControls.css';
 
 import './mobileNavigationFix.css';
+
+import './readabilityCorrections.css';
+import './frostedStoryLayout.css';

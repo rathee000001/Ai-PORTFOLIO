@@ -81,70 +81,7 @@
             "label": "Operational domain understanding",
             "body": "Understood the different information needs created by heterogeneous property inventory, partner-supplied access and client-facing work. Company activities are context; they are not all claimed as personal execution."
           }
-        ],
-        "objects": [
-          {
-            "name": "Property records",
-            "kind": "file",
-            "format": "Evidence / document",
-            "detail": "A shared property register organized location, type, lifecycle status, pricing and follow-up across 1,000+ records, five cities and more than 20 workflows.",
-            "fields": [
-              "Stakeholder questions",
-              "Decision views"
-            ],
-            "visual": "world",
-            "visualData": {
-              "type": "world",
-              "title": "Project world",
-              "content": []
-            }
-          },
-          {
-            "name": "Stakeholder questions",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Management, sales, brokers, builders and client-facing teams needed different answers from the same information. Their questions shaped definitions, filters and recurring views.",
-            "fields": [
-              "Property records",
-              "Decision views"
-            ],
-            "visual": "stakeholder-questions",
-            "visualData": {
-              "type": "comparison",
-              "title": "Different questions, shared records",
-              "content": [
-                "Management: inventory",
-                "Sales / brokers: availability",
-                "Clients: suitable properties"
-              ]
-            }
-          },
-          {
-            "name": "Decision views",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Excel and Tableau views turned prepared records into inventory, availability, trend and exception reporting for management review.",
-            "fields": [
-              "Property records",
-              "Stakeholder questions"
-            ],
-            "visual": "decision-dashboard",
-            "visualData": {
-              "type": "board",
-              "title": "Decision views",
-              "content": [
-                "Inventory",
-                "Availability",
-                "Pricing",
-                "Exceptions"
-              ]
-            }
-          }
-        ],
-        "composition": {
-          "id": "experience-chapter-0",
-          "layout": "hero"
-        }
+        ]
       },
       {
         "id": "chapter-1",
@@ -268,6 +205,80 @@
         "composition": {
           "id": "experience-chapter-1",
           "layout": "desk"
+        }
+      },
+      {
+        "id": "opening-evidence",
+        "title": "The records behind the operating view.",
+        "body": "Recognized that inconsistent categories and unclear stakeholder questions were the problem before dashboard presentation.",
+        "detail": "Property records, Stakeholder questions, Decision views bring this part of Business Analyst into focus. Select an element to inspect its role and the information it represents.",
+        "motion": "inspect",
+        "scene": {
+          "asset": "/worlds/gias-city.png",
+          "aspect": 1.7768331562167907
+        },
+        "objects": [
+          {
+            "name": "Property records",
+            "kind": "file",
+            "format": "Evidence / document",
+            "detail": "A shared property register organized location, type, lifecycle status, pricing and follow-up across 1,000+ records, five cities and more than 20 workflows.",
+            "fields": [
+              "Stakeholder questions",
+              "Decision views"
+            ],
+            "visual": "world",
+            "visualData": {
+              "type": "world",
+              "title": "Project world",
+              "content": []
+            }
+          },
+          {
+            "name": "Stakeholder questions",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "Management, sales, brokers, builders and client-facing teams needed different answers from the same information. Their questions shaped definitions, filters and recurring views.",
+            "fields": [
+              "Property records",
+              "Decision views"
+            ],
+            "visual": "stakeholder-questions",
+            "visualData": {
+              "type": "comparison",
+              "title": "Different questions, shared records",
+              "content": [
+                "Management: inventory",
+                "Sales / brokers: availability",
+                "Clients: suitable properties"
+              ]
+            }
+          },
+          {
+            "name": "Decision views",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "Excel and Tableau views turned prepared records into inventory, availability, trend and exception reporting for management review.",
+            "fields": [
+              "Property records",
+              "Stakeholder questions"
+            ],
+            "visual": "decision-dashboard",
+            "visualData": {
+              "type": "board",
+              "title": "Decision views",
+              "content": [
+                "Inventory",
+                "Availability",
+                "Pricing",
+                "Exceptions"
+              ]
+            }
+          }
+        ],
+        "composition": {
+          "id": "experience-opening-evidence",
+          "layout": "hero"
         }
       },
       {
@@ -816,77 +827,7 @@
             "label": "What a reviewer can inspect",
             "body": "The public repository and 43 guides expose the release structure, workflow intent, typed operations and the distinction between source qualification, installation and actual runtime behavior."
           }
-        ],
-        "objects": [
-          {
-            "name": "Project sources",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Selected files, code, documents and structured stores retain their source identity and locators, so a later result can be traced back to the material used.",
-            "fields": [
-              "Authoritative Plan",
-              "Recorded results"
-            ],
-            "visual": "world",
-            "visualData": {
-              "type": "world",
-              "title": "Project world",
-              "content": []
-            }
-          },
-          {
-            "name": "Authoritative Plan",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "The Plan defines ordered tasks, their current state and the next eligible work. Changing it and executing its tasks use separate, bounded workflows.",
-            "fields": [
-              "Project sources",
-              "Recorded results"
-            ],
-            "visual": "plan-board",
-            "visualData": {
-              "type": "board",
-              "title": "Authoritative Plan",
-              "content": [
-                "Task",
-                "Scope",
-                "Checks",
-                "Recorded result"
-              ]
-            }
-          },
-          {
-            "name": "Recorded results",
-            "kind": "file",
-            "format": "Evidence / document",
-            "detail": "Operation records connect the requested task to what ran, its checks and its returned state. A proposed action remains distinct from a verified result.",
-            "fields": [
-              "Project sources",
-              "Authoritative Plan"
-            ],
-            "visual": "receipt",
-            "visualData": {
-              "type": "table",
-              "title": "Recorded operation result",
-              "content": [
-                [
-                  "Bounded action",
-                  "Source / identity checks",
-                  "Actual operation state"
-                ]
-              ],
-              "headers": [
-                "Requested",
-                "Checked",
-                "Returned"
-              ]
-            }
-          }
-        ],
-        "composition": {
-          "id": "evidence-lane-plugin-chapter-0",
-          "layout": "hero"
-        }
+        ]
       },
       {
         "id": "chapter-1",
@@ -992,6 +933,87 @@
         "composition": {
           "id": "evidence-lane-plugin-chapter-1",
           "layout": "intent"
+        }
+      },
+      {
+        "id": "opening-evidence",
+        "title": "Sources, plans and results stay connected.",
+        "body": "I conceived the product, defined the boundaries between sources, plans, execution and review, and directed its AI-assisted implementation. The goal was to make a project inspectable and recoverable across working sessions.",
+        "detail": "Project sources, Authoritative Plan, Recorded results bring this part of Evidence Lane Plugin into focus. Select an element to inspect its role and the information it represents.",
+        "motion": "inspect",
+        "scene": {
+          "asset": "/worlds/home-plugin-violet.png",
+          "aspect": 1.7768331562167907
+        },
+        "objects": [
+          {
+            "name": "Project sources",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "Selected files, code, documents and structured stores retain their source identity and locators, so a later result can be traced back to the material used.",
+            "fields": [
+              "Authoritative Plan",
+              "Recorded results"
+            ],
+            "visual": "world",
+            "visualData": {
+              "type": "world",
+              "title": "Project world",
+              "content": []
+            }
+          },
+          {
+            "name": "Authoritative Plan",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "The Plan defines ordered tasks, their current state and the next eligible work. Changing it and executing its tasks use separate, bounded workflows.",
+            "fields": [
+              "Project sources",
+              "Recorded results"
+            ],
+            "visual": "plan-board",
+            "visualData": {
+              "type": "board",
+              "title": "Authoritative Plan",
+              "content": [
+                "Task",
+                "Scope",
+                "Checks",
+                "Recorded result"
+              ]
+            }
+          },
+          {
+            "name": "Recorded results",
+            "kind": "file",
+            "format": "Evidence / document",
+            "detail": "Operation records connect the requested task to what ran, its checks and its returned state. A proposed action remains distinct from a verified result.",
+            "fields": [
+              "Project sources",
+              "Authoritative Plan"
+            ],
+            "visual": "receipt",
+            "visualData": {
+              "type": "table",
+              "title": "Recorded operation result",
+              "content": [
+                [
+                  "Bounded action",
+                  "Source / identity checks",
+                  "Actual operation state"
+                ]
+              ],
+              "headers": [
+                "Requested",
+                "Checked",
+                "Returned"
+              ]
+            }
+          }
+        ],
+        "composition": {
+          "id": "evidence-lane-plugin-opening-evidence",
+          "layout": "hero"
         }
       },
       {
@@ -2575,67 +2597,7 @@
             "label": "Classified source registration",
             "body": "Native file/folder pickers feed lane registration, editable schema contracts and GitHub cloning; successful registration reloads persisted source state."
           }
-        ],
-        "objects": [
-          {
-            "name": "Mixed project files",
-            "kind": "file",
-            "format": "Evidence / document",
-            "detail": "Documents, spreadsheets, PDFs, images, code and Git history are ingested into source-linked project records.",
-            "fields": [
-              "Review state",
-              "Portable snapshot"
-            ],
-            "visual": "world",
-            "visualData": {
-              "type": "world",
-              "title": "Project world",
-              "content": []
-            }
-          },
-          {
-            "name": "Review state",
-            "kind": "check",
-            "format": "Project component",
-            "detail": "Proposed changes are kept separate from the saved baseline. Review packets and integrity checks support an explicit acceptance decision.",
-            "fields": [
-              "Mixed project files",
-              "Portable snapshot"
-            ],
-            "visual": "review-states",
-            "visualData": {
-              "type": "board",
-              "title": "Candidate versus saved baseline",
-              "content": [
-                "Proposed change",
-                "Review packet",
-                "Accepted snapshot"
-              ]
-            }
-          },
-          {
-            "name": "Portable snapshot",
-            "kind": "table",
-            "format": "Structured records",
-            "detail": "Portable SQLite records and content-addressed snapshots preserve source links, version differences and project context for later handoff.",
-            "fields": [
-              "Mixed project files",
-              "Review state"
-            ],
-            "visual": "snapshot",
-            "visualData": {
-              "type": "sprite",
-              "title": "Portable snapshot",
-              "content": [],
-              "sheet": "domain",
-              "frame": 15
-            }
-          }
-        ],
-        "composition": {
-          "id": "evidence-lane-app-chapter-0",
-          "layout": "hero"
-        }
+        ]
       },
       {
         "id": "chapter-1",
@@ -2741,6 +2703,77 @@
         "composition": {
           "id": "evidence-lane-app-chapter-1",
           "layout": "archive"
+        }
+      },
+      {
+        "id": "opening-evidence",
+        "title": "Files, review state and portable records.",
+        "body": "React/TypeScript invokes Tauri; Rust transports JSON requests to a persistent Python backend and returns request-matched responses and progress events.",
+        "detail": "Mixed project files, Review state, Portable snapshot bring this part of Evidence Lane App into focus. Select an element to inspect its role and the information it represents.",
+        "motion": "inspect",
+        "scene": {
+          "asset": "/worlds/home-plugin-world.png",
+          "aspect": 1.7768331562167907
+        },
+        "objects": [
+          {
+            "name": "Mixed project files",
+            "kind": "file",
+            "format": "Evidence / document",
+            "detail": "Documents, spreadsheets, PDFs, images, code and Git history are ingested into source-linked project records.",
+            "fields": [
+              "Review state",
+              "Portable snapshot"
+            ],
+            "visual": "world",
+            "visualData": {
+              "type": "world",
+              "title": "Project world",
+              "content": []
+            }
+          },
+          {
+            "name": "Review state",
+            "kind": "check",
+            "format": "Project component",
+            "detail": "Proposed changes are kept separate from the saved baseline. Review packets and integrity checks support an explicit acceptance decision.",
+            "fields": [
+              "Mixed project files",
+              "Portable snapshot"
+            ],
+            "visual": "review-states",
+            "visualData": {
+              "type": "board",
+              "title": "Candidate versus saved baseline",
+              "content": [
+                "Proposed change",
+                "Review packet",
+                "Accepted snapshot"
+              ]
+            }
+          },
+          {
+            "name": "Portable snapshot",
+            "kind": "table",
+            "format": "Structured records",
+            "detail": "Portable SQLite records and content-addressed snapshots preserve source links, version differences and project context for later handoff.",
+            "fields": [
+              "Mixed project files",
+              "Review state"
+            ],
+            "visual": "snapshot",
+            "visualData": {
+              "type": "sprite",
+              "title": "Portable snapshot",
+              "content": [],
+              "sheet": "domain",
+              "frame": 15
+            }
+          }
+        ],
+        "composition": {
+          "id": "evidence-lane-app-opening-evidence",
+          "layout": "hero"
         }
       },
       {
@@ -3426,91 +3459,7 @@
             "label": "Business-readable analytics integration",
             "body": "The architecture gives a reviewer ways to inspect source quality, assumptions, model comparisons, uncertainties and explanations in one project. This supports a broader applied-data/AI-integration profile than a single forecasting chart."
           }
-        ],
-        "objects": [
-          {
-            "name": "Public datasets",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Public market, macroeconomic and policy inputs are aligned by date, with missingness, coverage and cutoff conditions retained.",
-            "fields": [
-              "Model comparison",
-              "Evidence outputs"
-            ],
-            "visual": "world",
-            "visualData": {
-              "type": "world",
-              "title": "Project world",
-              "content": []
-            }
-          },
-          {
-            "name": "Model comparison",
-            "kind": "chart",
-            "format": "Project component",
-            "detail": "Classical and neural model families produce inspectable outputs and evaluation artifacts. Their comparison depends on the chosen windows, target definitions and preprocessing.",
-            "fields": [
-              "Public datasets",
-              "Evidence outputs"
-            ],
-            "visual": "model-comparison",
-            "visualData": {
-              "type": "table",
-              "title": "Model comparison",
-              "content": [
-                [
-                  "Classical",
-                  "Benchmarks"
-                ],
-                [
-                  "Deep ML",
-                  "Temporal outputs"
-                ],
-                [
-                  "Evaluation",
-                  "Artifacts and limits"
-                ]
-              ],
-              "headers": [
-                "Family",
-                "Output"
-              ]
-            }
-          },
-          {
-            "name": "Evidence outputs",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "CSV, JSON and Parquet artifacts retain predictions, intervals, metadata and checks that the interface can inspect and explain.",
-            "fields": [
-              "Public datasets",
-              "Model comparison"
-            ],
-            "visual": "artifact-catalog",
-            "visualData": {
-              "type": "table",
-              "title": "Artifact catalogue",
-              "content": [
-                [
-                  "CSV / JSON",
-                  "Predictions and metadata"
-                ],
-                [
-                  "Parquet",
-                  "Numeric feature stores"
-                ]
-              ],
-              "headers": [
-                "Format",
-                "Contents"
-              ]
-            }
-          }
-        ],
-        "composition": {
-          "id": "gold-nexus-alpha-chapter-0",
-          "layout": "hero"
-        }
+        ]
       },
       {
         "id": "chapter-1",
@@ -3620,6 +3569,101 @@
         "composition": {
           "id": "gold-nexus-alpha-chapter-1",
           "layout": "data-lab"
+        }
+      },
+      {
+        "id": "opening-evidence",
+        "title": "From public inputs to inspectable outputs.",
+        "body": "Connects source adapters and historical matrices to model-specific feature stores, research experiments, versioned output artifacts, API retrieval, interactive analysis and business-language interpretation.",
+        "detail": "Public datasets, Model comparison, Evidence outputs bring this part of Gold Nexus Alpha into focus. Select an element to inspect its role and the information it represents.",
+        "motion": "inspect",
+        "scene": {
+          "asset": "/worlds/home-gna-world.png",
+          "aspect": 1.7768331562167907
+        },
+        "objects": [
+          {
+            "name": "Public datasets",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "Public market, macroeconomic and policy inputs are aligned by date, with missingness, coverage and cutoff conditions retained.",
+            "fields": [
+              "Model comparison",
+              "Evidence outputs"
+            ],
+            "visual": "world",
+            "visualData": {
+              "type": "world",
+              "title": "Project world",
+              "content": []
+            }
+          },
+          {
+            "name": "Model comparison",
+            "kind": "chart",
+            "format": "Project component",
+            "detail": "Classical and neural model families produce inspectable outputs and evaluation artifacts. Their comparison depends on the chosen windows, target definitions and preprocessing.",
+            "fields": [
+              "Public datasets",
+              "Evidence outputs"
+            ],
+            "visual": "model-comparison",
+            "visualData": {
+              "type": "table",
+              "title": "Model comparison",
+              "content": [
+                [
+                  "Classical",
+                  "Benchmarks"
+                ],
+                [
+                  "Deep ML",
+                  "Temporal outputs"
+                ],
+                [
+                  "Evaluation",
+                  "Artifacts and limits"
+                ]
+              ],
+              "headers": [
+                "Family",
+                "Output"
+              ]
+            }
+          },
+          {
+            "name": "Evidence outputs",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "CSV, JSON and Parquet artifacts retain predictions, intervals, metadata and checks that the interface can inspect and explain.",
+            "fields": [
+              "Public datasets",
+              "Model comparison"
+            ],
+            "visual": "artifact-catalog",
+            "visualData": {
+              "type": "table",
+              "title": "Artifact catalogue",
+              "content": [
+                [
+                  "CSV / JSON",
+                  "Predictions and metadata"
+                ],
+                [
+                  "Parquet",
+                  "Numeric feature stores"
+                ]
+              ],
+              "headers": [
+                "Format",
+                "Contents"
+              ]
+            }
+          }
+        ],
+        "composition": {
+          "id": "gold-nexus-alpha-opening-evidence",
+          "layout": "hero"
         }
       },
       {
@@ -4490,69 +4534,7 @@
             "label": "Method and UI communication",
             "body": "Provides separate Intelligence, Regression, In-Sample, Out-Sample, Forecast and Documentation routes, shared navigation and explanatory visuals for the model workflow."
           }
-        ],
-        "objects": [
-          {
-            "name": "Monthly inputs",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "A nineteen-factor registry coordinates public source adapters and month-end analytical inputs.",
-            "fields": [
-              "Ridge model",
-              "Scenario views"
-            ],
-            "visual": "world",
-            "visualData": {
-              "type": "world",
-              "title": "Project world",
-              "content": []
-            }
-          },
-          {
-            "name": "Ridge model",
-            "kind": "chart",
-            "format": "Project component",
-            "detail": "A typed Ridge regression calculation exposes the matrix, coefficients, residuals and fixed-coefficient later-period evaluation.",
-            "fields": [
-              "Monthly inputs",
-              "Scenario views"
-            ],
-            "visual": "ridge",
-            "visualData": {
-              "type": "formula",
-              "title": "Ridge calculation",
-              "content": [
-                "y = β₀ + Xβ",
-                "L2 regularization",
-                "Intercept unpenalized"
-              ]
-            }
-          },
-          {
-            "name": "Scenario views",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Contribution, regime and conditional scenario views explain how model inputs and assumptions relate to the displayed result.",
-            "fields": [
-              "Monthly inputs",
-              "Ridge model"
-            ],
-            "visual": "scenario",
-            "visualData": {
-              "type": "fan",
-              "title": "Conditional scenarios",
-              "content": [
-                "Inputs",
-                "Proxy assumptions",
-                "Alternative outcomes"
-              ]
-            }
-          }
-        ],
-        "composition": {
-          "id": "gold-regression-chapter-0",
-          "layout": "hero"
-        }
+        ]
       },
       {
         "id": "chapter-1",
@@ -4656,6 +4638,79 @@
         "composition": {
           "id": "gold-regression-chapter-1",
           "layout": "data-lab"
+        }
+      },
+      {
+        "id": "opening-evidence",
+        "title": "Inputs, coefficients and conditional scenarios.",
+        "body": "Connects local source datasets and FRED observations to factor views, an aligned model matrix, Ridge computation, in/out-of-sample evaluation, projection views and downloadable results.",
+        "detail": "Monthly inputs, Ridge model, Scenario views bring this part of Gold.AI Regression into focus. Select an element to inspect its role and the information it represents.",
+        "motion": "inspect",
+        "scene": {
+          "asset": "/worlds/regression-world.png",
+          "aspect": 1.7768331562167907
+        },
+        "objects": [
+          {
+            "name": "Monthly inputs",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "A nineteen-factor registry coordinates public source adapters and month-end analytical inputs.",
+            "fields": [
+              "Ridge model",
+              "Scenario views"
+            ],
+            "visual": "world",
+            "visualData": {
+              "type": "world",
+              "title": "Project world",
+              "content": []
+            }
+          },
+          {
+            "name": "Ridge model",
+            "kind": "chart",
+            "format": "Project component",
+            "detail": "A typed Ridge regression calculation exposes the matrix, coefficients, residuals and fixed-coefficient later-period evaluation.",
+            "fields": [
+              "Monthly inputs",
+              "Scenario views"
+            ],
+            "visual": "ridge",
+            "visualData": {
+              "type": "formula",
+              "title": "Ridge calculation",
+              "content": [
+                "y = β₀ + Xβ",
+                "L2 regularization",
+                "Intercept unpenalized"
+              ]
+            }
+          },
+          {
+            "name": "Scenario views",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "Contribution, regime and conditional scenario views explain how model inputs and assumptions relate to the displayed result.",
+            "fields": [
+              "Monthly inputs",
+              "Ridge model"
+            ],
+            "visual": "scenario",
+            "visualData": {
+              "type": "fan",
+              "title": "Conditional scenarios",
+              "content": [
+                "Inputs",
+                "Proxy assumptions",
+                "Alternative outcomes"
+              ]
+            }
+          }
+        ],
+        "composition": {
+          "id": "gold-regression-opening-evidence",
+          "layout": "hero"
         }
       },
       {
@@ -5269,81 +5324,7 @@
             "label": "Business-oriented analytical communication",
             "body": "Explains why a model is being studied, how training differs from testing, what the coefficients mean and where assumptions limit interpretation, connecting the quantitative exercise to an operations classroom problem."
           }
-        ],
-        "objects": [
-          {
-            "name": "Model workbook",
-            "kind": "table",
-            "format": "Structured records",
-            "detail": "The Excel workbook contains source lookups, date transformations, model calculations and separate training/test sheets.",
-            "fields": [
-              "Six predictors",
-              "Comparison views"
-            ],
-            "visual": "world",
-            "visualData": {
-              "type": "world",
-              "title": "Project world",
-              "content": []
-            }
-          },
-          {
-            "name": "Six predictors",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Six documented macro-financial predictors feed the spreadsheet-centered model through a common date key.",
-            "fields": [
-              "Model workbook",
-              "Comparison views"
-            ],
-            "visual": "six-factors",
-            "visualData": {
-              "type": "table",
-              "title": "Six predictors",
-              "content": [
-                [
-                  "Nominal yield",
-                  "GPR"
-                ],
-                [
-                  "CPI",
-                  "VIX"
-                ],
-                [
-                  "USD index",
-                  "Central-bank reserves"
-                ]
-              ],
-              "headers": [
-                "Macro inputs",
-                "Risk / reserves"
-              ]
-            }
-          },
-          {
-            "name": "Comparison views",
-            "kind": "chart",
-            "format": "Project component",
-            "detail": "Two Tableau worksheet views compare actual and predicted values for the in-sample and later-period windows.",
-            "fields": [
-              "Model workbook",
-              "Six predictors"
-            ],
-            "visual": "tableau-report",
-            "visualData": {
-              "type": "comparison",
-              "title": "Two Tableau comparisons",
-              "content": [
-                "In-sample",
-                "Later period"
-              ]
-            }
-          }
-        ],
-        "composition": {
-          "id": "gold-excel-tableau-chapter-0",
-          "layout": "hero"
-        }
+        ]
       },
       {
         "id": "chapter-1",
@@ -5460,6 +5441,91 @@
         "composition": {
           "id": "gold-excel-tableau-chapter-1",
           "layout": "matrix"
+        }
+      },
+      {
+        "id": "opening-evidence",
+        "title": "The workbook behind the comparison.",
+        "body": "The linked workbook provides a concrete source-to-model-to-backtest structure across 14 sheets, with 5,383 formula cells and separate source, assembled model, regression, coefficient, test and forecast areas.",
+        "detail": "Model workbook, Six predictors, Comparison views bring this part of Gold Excel & Tableau into focus. Select an element to inspect its role and the information it represents.",
+        "motion": "inspect",
+        "scene": {
+          "asset": "/worlds/excel-world.png",
+          "aspect": 1.7768331562167907
+        },
+        "objects": [
+          {
+            "name": "Model workbook",
+            "kind": "table",
+            "format": "Structured records",
+            "detail": "The Excel workbook contains source lookups, date transformations, model calculations and separate training/test sheets.",
+            "fields": [
+              "Six predictors",
+              "Comparison views"
+            ],
+            "visual": "world",
+            "visualData": {
+              "type": "world",
+              "title": "Project world",
+              "content": []
+            }
+          },
+          {
+            "name": "Six predictors",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "Six documented macro-financial predictors feed the spreadsheet-centered model through a common date key.",
+            "fields": [
+              "Model workbook",
+              "Comparison views"
+            ],
+            "visual": "six-factors",
+            "visualData": {
+              "type": "table",
+              "title": "Six predictors",
+              "content": [
+                [
+                  "Nominal yield",
+                  "GPR"
+                ],
+                [
+                  "CPI",
+                  "VIX"
+                ],
+                [
+                  "USD index",
+                  "Central-bank reserves"
+                ]
+              ],
+              "headers": [
+                "Macro inputs",
+                "Risk / reserves"
+              ]
+            }
+          },
+          {
+            "name": "Comparison views",
+            "kind": "chart",
+            "format": "Project component",
+            "detail": "Two Tableau worksheet views compare actual and predicted values for the in-sample and later-period windows.",
+            "fields": [
+              "Model workbook",
+              "Six predictors"
+            ],
+            "visual": "tableau-report",
+            "visualData": {
+              "type": "comparison",
+              "title": "Two Tableau comparisons",
+              "content": [
+                "In-sample",
+                "Later period"
+              ]
+            }
+          }
+        ],
+        "composition": {
+          "id": "gold-excel-tableau-opening-evidence",
+          "layout": "hero"
         }
       },
       {
@@ -6085,68 +6151,7 @@
             "label": "Mission-to-operating-model reasoning",
             "body": "Connects literacy access to book collection, sorting, distribution, partnerships and the resources that sponsors and major donors could fund."
           }
-        ],
-        "objects": [
-          {
-            "name": "Literacy mission",
-            "kind": "book",
-            "format": "Project component",
-            "detail": "The literacy mission is translated into an operating rationale and a concrete case for supporter participation.",
-            "fields": [
-              "Target audiences",
-              "Campaign strategy"
-            ],
-            "visual": "world",
-            "visualData": {
-              "type": "world",
-              "title": "Project world",
-              "content": []
-            }
-          },
-          {
-            "name": "Target audiences",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Geographic, demographic, psychographic and behavioral segmentation supports audience priorities and tailored appeals.",
-            "fields": [
-              "Literacy mission",
-              "Campaign strategy"
-            ],
-            "visual": "audience",
-            "visualData": {
-              "type": "sprite",
-              "title": "Supporter audience",
-              "content": [],
-              "sheet": "domain",
-              "frame": 9
-            }
-          },
-          {
-            "name": "Campaign strategy",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "The 15-page strategy connects positioning, channel roles, campaign materials and a time-bounded plan with proposed measurement.",
-            "fields": [
-              "Literacy mission",
-              "Target audiences"
-            ],
-            "visual": "strategy-map",
-            "visualData": {
-              "type": "board",
-              "title": "Campaign strategy",
-              "content": [
-                "Mission",
-                "Audience",
-                "Positioning",
-                "Plan"
-              ]
-            }
-          }
-        ],
-        "composition": {
-          "id": "chapters-for-change-chapter-0",
-          "layout": "hero"
-        }
+        ]
       },
       {
         "id": "chapter-1",
@@ -6242,6 +6247,78 @@
         "composition": {
           "id": "chapters-for-change-chapter-1",
           "layout": "audience"
+        }
+      },
+      {
+        "id": "opening-evidence",
+        "title": "The mission, the audience and the campaign.",
+        "body": "Organizes mission, history, past campaigns, segmentation, targeting, alignment, positioning, USP, campaign planning, materials, audience appeal, integration and action into 15 static strategy pages.",
+        "detail": "Literacy mission, Target audiences, Campaign strategy bring this part of Chapters 4 Change into focus. Select an element to inspect its role and the information it represents.",
+        "motion": "inspect",
+        "scene": {
+          "asset": "/worlds/chapters-world.png",
+          "aspect": 1.7768331562167907
+        },
+        "objects": [
+          {
+            "name": "Literacy mission",
+            "kind": "book",
+            "format": "Project component",
+            "detail": "The literacy mission is translated into an operating rationale and a concrete case for supporter participation.",
+            "fields": [
+              "Target audiences",
+              "Campaign strategy"
+            ],
+            "visual": "world",
+            "visualData": {
+              "type": "world",
+              "title": "Project world",
+              "content": []
+            }
+          },
+          {
+            "name": "Target audiences",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "Geographic, demographic, psychographic and behavioral segmentation supports audience priorities and tailored appeals.",
+            "fields": [
+              "Literacy mission",
+              "Campaign strategy"
+            ],
+            "visual": "audience",
+            "visualData": {
+              "type": "sprite",
+              "title": "Supporter audience",
+              "content": [],
+              "sheet": "domain",
+              "frame": 9
+            }
+          },
+          {
+            "name": "Campaign strategy",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "The 15-page strategy connects positioning, channel roles, campaign materials and a time-bounded plan with proposed measurement.",
+            "fields": [
+              "Literacy mission",
+              "Target audiences"
+            ],
+            "visual": "strategy-map",
+            "visualData": {
+              "type": "board",
+              "title": "Campaign strategy",
+              "content": [
+                "Mission",
+                "Audience",
+                "Positioning",
+                "Plan"
+              ]
+            }
+          }
+        ],
+        "composition": {
+          "id": "chapters-for-change-opening-evidence",
+          "layout": "hero"
         }
       },
       {
@@ -6837,67 +6914,7 @@
             "label": "A complete proposed visitor journey",
             "body": "Arranges mission, fundraising progress, impact narrative, campus involvement, contribution tiers, gallery and contact sections with repeated calls to action."
           }
-        ],
-        "objects": [
-          {
-            "name": "Discover mission",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "The website introduces the literacy mission and gives a visitor a clear route into the proposed supporter journey.",
-            "fields": [
-              "Choose support",
-              "Join an event"
-            ],
-            "visual": "world",
-            "visualData": {
-              "type": "world",
-              "title": "Project world",
-              "content": []
-            }
-          },
-          {
-            "name": "Choose support",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Contribution options and their selections flow through simulated interaction states; no real payment or donor processing is claimed.",
-            "fields": [
-              "Discover mission",
-              "Join an event"
-            ],
-            "visual": "contribution-options",
-            "visualData": {
-              "type": "board",
-              "title": "Proposed contribution choices",
-              "content": [
-                "Books",
-                "Support",
-                "Participation"
-              ]
-            }
-          },
-          {
-            "name": "Join an event",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Reusable campus pages describe events and demonstrate sign-up and confirmation behavior within the prototype.",
-            "fields": [
-              "Discover mission",
-              "Choose support"
-            ],
-            "visual": "events",
-            "visualData": {
-              "type": "sprite",
-              "title": "Campus event",
-              "content": [],
-              "sheet": "domain",
-              "frame": 11
-            }
-          }
-        ],
-        "composition": {
-          "id": "book-fairies-chapter-0",
-          "layout": "hero"
-        }
+        ]
       },
       {
         "id": "chapter-1",
@@ -6993,6 +7010,77 @@
         "composition": {
           "id": "book-fairies-chapter-1",
           "layout": "audience"
+        }
+      },
+      {
+        "id": "opening-evidence",
+        "title": "The choices in the supporter journey.",
+        "body": "Turns a literacy-campaign concept into a landing page, fundraiser page, campus-event pages, contribution choices, registration dialogs and contact paths.",
+        "detail": "Discover mission, Choose support, Join an event bring this part of The Book Fairies into focus. Select an element to inspect its role and the information it represents.",
+        "motion": "inspect",
+        "scene": {
+          "asset": "/worlds/book-fairies-world.png",
+          "aspect": 1.7768331562167907
+        },
+        "objects": [
+          {
+            "name": "Discover mission",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "The website introduces the literacy mission and gives a visitor a clear route into the proposed supporter journey.",
+            "fields": [
+              "Choose support",
+              "Join an event"
+            ],
+            "visual": "world",
+            "visualData": {
+              "type": "world",
+              "title": "Project world",
+              "content": []
+            }
+          },
+          {
+            "name": "Choose support",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "Contribution options and their selections flow through simulated interaction states; no real payment or donor processing is claimed.",
+            "fields": [
+              "Discover mission",
+              "Join an event"
+            ],
+            "visual": "contribution-options",
+            "visualData": {
+              "type": "board",
+              "title": "Proposed contribution choices",
+              "content": [
+                "Books",
+                "Support",
+                "Participation"
+              ]
+            }
+          },
+          {
+            "name": "Join an event",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "Reusable campus pages describe events and demonstrate sign-up and confirmation behavior within the prototype.",
+            "fields": [
+              "Discover mission",
+              "Choose support"
+            ],
+            "visual": "events",
+            "visualData": {
+              "type": "sprite",
+              "title": "Campus event",
+              "content": [],
+              "sheet": "domain",
+              "frame": 11
+            }
+          }
+        ],
+        "composition": {
+          "id": "book-fairies-opening-evidence",
+          "layout": "hero"
         }
       },
       {
@@ -7551,67 +7639,7 @@
             "label": "Supply-chain decision framing",
             "body": "Connects customer mix, product concentration, shipment mix and late delivery to questions about demand, procurement, service levels and operational monitoring."
           }
-        ],
-        "objects": [
-          {
-            "name": "Demand records",
-            "kind": "file",
-            "format": "Evidence / document",
-            "detail": "The analysis separates 180,519 item rows from 65,752 distinct orders, so demand measures retain the correct grain.",
-            "fields": [
-              "Fulfillment views",
-              "Tableau story"
-            ],
-            "visual": "world",
-            "visualData": {
-              "type": "world",
-              "title": "Project world",
-              "content": []
-            }
-          },
-          {
-            "name": "Fulfillment views",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Shipping-mode, delivery-time and delivery-risk views connect order fulfillment questions to the dataset’s available fields.",
-            "fields": [
-              "Demand records",
-              "Tableau story"
-            ],
-            "visual": "shipping",
-            "visualData": {
-              "type": "sprite",
-              "title": "Shipping mode analysis",
-              "content": [],
-              "sheet": "domain",
-              "frame": 7
-            }
-          },
-          {
-            "name": "Tableau story",
-            "kind": "table",
-            "format": "Structured records",
-            "detail": "Eleven worksheets, three dashboards and a three-point Tableau story support connected comparison and filtering.",
-            "fields": [
-              "Demand records",
-              "Fulfillment views"
-            ],
-            "visual": "tableau-story",
-            "visualData": {
-              "type": "board",
-              "title": "Connected Tableau story",
-              "content": [
-                "11 worksheets",
-                "3 dashboards",
-                "3 story points"
-              ]
-            }
-          }
-        ],
-        "composition": {
-          "id": "dataco-chapter-0",
-          "layout": "hero"
-        }
+        ]
       },
       {
         "id": "chapter-1",
@@ -7729,6 +7757,77 @@
         "composition": {
           "id": "dataco-chapter-1",
           "layout": "data-lab"
+        }
+      },
+      {
+        "id": "opening-evidence",
+        "title": "The records behind demand and fulfillment.",
+        "body": "Works with a packaged 180519-row, 53-field extract spanning sales, customers, products, markets, delivery and shipping, covering January 2015-January 2018.",
+        "detail": "Demand records, Fulfillment views, Tableau story bring this part of DataCo Tableau into focus. Select an element to inspect its role and the information it represents.",
+        "motion": "inspect",
+        "scene": {
+          "asset": "/worlds/dataco-world.png",
+          "aspect": 1.7768331562167907
+        },
+        "objects": [
+          {
+            "name": "Demand records",
+            "kind": "file",
+            "format": "Evidence / document",
+            "detail": "The analysis separates 180,519 item rows from 65,752 distinct orders, so demand measures retain the correct grain.",
+            "fields": [
+              "Fulfillment views",
+              "Tableau story"
+            ],
+            "visual": "world",
+            "visualData": {
+              "type": "world",
+              "title": "Project world",
+              "content": []
+            }
+          },
+          {
+            "name": "Fulfillment views",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "Shipping-mode, delivery-time and delivery-risk views connect order fulfillment questions to the dataset’s available fields.",
+            "fields": [
+              "Demand records",
+              "Tableau story"
+            ],
+            "visual": "shipping",
+            "visualData": {
+              "type": "sprite",
+              "title": "Shipping mode analysis",
+              "content": [],
+              "sheet": "domain",
+              "frame": 7
+            }
+          },
+          {
+            "name": "Tableau story",
+            "kind": "table",
+            "format": "Structured records",
+            "detail": "Eleven worksheets, three dashboards and a three-point Tableau story support connected comparison and filtering.",
+            "fields": [
+              "Demand records",
+              "Fulfillment views"
+            ],
+            "visual": "tableau-story",
+            "visualData": {
+              "type": "board",
+              "title": "Connected Tableau story",
+              "content": [
+                "11 worksheets",
+                "3 dashboards",
+                "3 story points"
+              ]
+            }
+          }
+        ],
+        "composition": {
+          "id": "dataco-opening-evidence",
+          "layout": "hero"
         }
       },
       {
@@ -8344,76 +8443,7 @@
             "label": "Financial statement input staging",
             "body": "Organizes manually entered company-year values with financial field headings and units across 15 ratio-specific sheets."
           }
-        ],
-        "objects": [
-          {
-            "name": "10-K filings",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Manually collected SEC 10-K statement inputs cover five pharmaceutical companies over 2018–2023.",
-            "fields": [
-              "Ratio workbook",
-              "Business interpretation"
-            ],
-            "visual": "world",
-            "visualData": {
-              "type": "world",
-              "title": "Project world",
-              "content": []
-            }
-          },
-          {
-            "name": "Ratio workbook",
-            "kind": "table",
-            "format": "Structured records",
-            "detail": "A repeatable Excel framework calculates liquidity, leverage, margins, returns and turnover, with formula and source limitations exposed.",
-            "fields": [
-              "10-K filings",
-              "Business interpretation"
-            ],
-            "visual": "ratio-sheet",
-            "visualData": {
-              "type": "table",
-              "title": "Ratio framework",
-              "content": [
-                [
-                  "Margins",
-                  "Returns",
-                  "Turnover"
-                ]
-              ],
-              "headers": [
-                "Liquidity",
-                "Leverage",
-                "Efficiency"
-              ]
-            }
-          },
-          {
-            "name": "Business interpretation",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "The academic report and presentation interpret comparative patterns without treating them as validated investment conclusions.",
-            "fields": [
-              "10-K filings",
-              "Ratio workbook"
-            ],
-            "visual": "financial-report",
-            "visualData": {
-              "type": "document",
-              "title": "Financial analysis report",
-              "content": [
-                "Company comparison",
-                "Six-year scope",
-                "Interpretation"
-              ]
-            }
-          }
-        ],
-        "composition": {
-          "id": "sec-analysis-chapter-0",
-          "layout": "hero"
-        }
+        ]
       },
       {
         "id": "chapter-1",
@@ -8518,6 +8548,86 @@
         "composition": {
           "id": "sec-analysis-chapter-1",
           "layout": "library"
+        }
+      },
+      {
+        "id": "opening-evidence",
+        "title": "From filings to a financial interpretation.",
+        "body": "Structures a five-company, six-year comparison for Merck, Eli Lilly, Vertex, Abbott and Bristol Myers Squibb across 2018-2023.",
+        "detail": "10-K filings, Ratio workbook, Business interpretation bring this part of SEC 10-K Analysis into focus. Select an element to inspect its role and the information it represents.",
+        "motion": "inspect",
+        "scene": {
+          "asset": "/worlds/sec-world.png",
+          "aspect": 1.7768331562167907
+        },
+        "objects": [
+          {
+            "name": "10-K filings",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "Manually collected SEC 10-K statement inputs cover five pharmaceutical companies over 2018–2023.",
+            "fields": [
+              "Ratio workbook",
+              "Business interpretation"
+            ],
+            "visual": "world",
+            "visualData": {
+              "type": "world",
+              "title": "Project world",
+              "content": []
+            }
+          },
+          {
+            "name": "Ratio workbook",
+            "kind": "table",
+            "format": "Structured records",
+            "detail": "A repeatable Excel framework calculates liquidity, leverage, margins, returns and turnover, with formula and source limitations exposed.",
+            "fields": [
+              "10-K filings",
+              "Business interpretation"
+            ],
+            "visual": "ratio-sheet",
+            "visualData": {
+              "type": "table",
+              "title": "Ratio framework",
+              "content": [
+                [
+                  "Margins",
+                  "Returns",
+                  "Turnover"
+                ]
+              ],
+              "headers": [
+                "Liquidity",
+                "Leverage",
+                "Efficiency"
+              ]
+            }
+          },
+          {
+            "name": "Business interpretation",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "The academic report and presentation interpret comparative patterns without treating them as validated investment conclusions.",
+            "fields": [
+              "10-K filings",
+              "Ratio workbook"
+            ],
+            "visual": "financial-report",
+            "visualData": {
+              "type": "document",
+              "title": "Financial analysis report",
+              "content": [
+                "Company comparison",
+                "Six-year scope",
+                "Interpretation"
+              ]
+            }
+          }
+        ],
+        "composition": {
+          "id": "sec-analysis-opening-evidence",
+          "layout": "hero"
         }
       },
       {
@@ -9093,67 +9203,7 @@
             "label": "Business-model and incentive reasoning",
             "body": "Connects advertising revenue, user behavior, engagement and data practices to privacy and reputation incentives."
           }
-        ],
-        "objects": [
-          {
-            "name": "Business incentives",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "The case considers how Meta’s public business model and incentives shape leadership and organizational decisions.",
-            "fields": [
-              "Stakeholder interests",
-              "Governance choices"
-            ],
-            "visual": "world",
-            "visualData": {
-              "type": "world",
-              "title": "Project world",
-              "content": []
-            }
-          },
-          {
-            "name": "Stakeholder interests",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Employees, users, investors, regulators and communities provide different perspectives on the same governance questions.",
-            "fields": [
-              "Business incentives",
-              "Governance choices"
-            ],
-            "visual": "stakeholders",
-            "visualData": {
-              "type": "sprite",
-              "title": "Stakeholder interests",
-              "content": [],
-              "sheet": "domain",
-              "frame": 9
-            }
-          },
-          {
-            "name": "Governance choices",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Recommendations address oversight, decision rights, participation and accountability, using public information and academic frameworks.",
-            "fields": [
-              "Business incentives",
-              "Stakeholder interests"
-            ],
-            "visual": "governance",
-            "visualData": {
-              "type": "board",
-              "title": "Governance questions",
-              "content": [
-                "Decision rights",
-                "Oversight",
-                "Accountability"
-              ]
-            }
-          }
-        ],
-        "composition": {
-          "id": "meta-case-chapter-0",
-          "layout": "hero"
-        }
+        ]
       },
       {
         "id": "chapter-1",
@@ -9248,6 +9298,77 @@
         "composition": {
           "id": "meta-case-chapter-1",
           "layout": "audience"
+        }
+      },
+      {
+        "id": "opening-evidence",
+        "title": "Incentives, stakeholders and governance.",
+        "body": "Organizes a complex company case into business model, trust concerns, rebranding, founder control, culture, leadership, stakeholders and recommendations.",
+        "detail": "Business incentives, Stakeholder interests, Governance choices bring this part of Meta Case Analysis into focus. Select an element to inspect its role and the information it represents.",
+        "motion": "inspect",
+        "scene": {
+          "asset": "/worlds/meta-world.png",
+          "aspect": 1.7768331562167907
+        },
+        "objects": [
+          {
+            "name": "Business incentives",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "The case considers how Meta’s public business model and incentives shape leadership and organizational decisions.",
+            "fields": [
+              "Stakeholder interests",
+              "Governance choices"
+            ],
+            "visual": "world",
+            "visualData": {
+              "type": "world",
+              "title": "Project world",
+              "content": []
+            }
+          },
+          {
+            "name": "Stakeholder interests",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "Employees, users, investors, regulators and communities provide different perspectives on the same governance questions.",
+            "fields": [
+              "Business incentives",
+              "Governance choices"
+            ],
+            "visual": "stakeholders",
+            "visualData": {
+              "type": "sprite",
+              "title": "Stakeholder interests",
+              "content": [],
+              "sheet": "domain",
+              "frame": 9
+            }
+          },
+          {
+            "name": "Governance choices",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "Recommendations address oversight, decision rights, participation and accountability, using public information and academic frameworks.",
+            "fields": [
+              "Business incentives",
+              "Stakeholder interests"
+            ],
+            "visual": "governance",
+            "visualData": {
+              "type": "board",
+              "title": "Governance questions",
+              "content": [
+                "Decision rights",
+                "Oversight",
+                "Accountability"
+              ]
+            }
+          }
+        ],
+        "composition": {
+          "id": "meta-case-opening-evidence",
+          "layout": "hero"
         }
       },
       {
@@ -9771,7 +9892,7 @@
     "background": "#21170f",
     "secondary": "#adc990",
     "world": "chocolate",
-    "status": "Public-evidence study · redesign in progress",
+    "status": "Live public-evidence study",
     "concept": "/design-references/13-hershey.png",
     "description": "The Hershey study asks what public information can tell us about a HERSHEY’S 1.55 oz / 43 g milk chocolate bar: its ingredients, supplier context, modeled production and distribution, benchmark costs and the evidence behind those statements.",
     "limits": "Public-source batch pipeline; benchmark costs, not internal Hershey costs. Retail residual is not profit. Company-level sourcing does not prove exact-SKU provenance. Frontend redesign in progress; portfolio concept is not a completed deployment.",
@@ -9780,7 +9901,7 @@
         "id": "chapter-0",
         "title": "Start with one chocolate bar.",
         "body": "The Hershey study asks what public information can tell us about a HERSHEY’S 1.55 oz / 43 g milk chocolate bar: its ingredients, supplier context, modeled production and distribution, benchmark costs and the evidence behind those statements.",
-        "detail": "This is an independent academic public-evidence workbench. The source-processing and analytical outputs are established separately from the current frontend redesign, which remains in progress.",
+        "detail": "This is an independent academic public-evidence workbench. Its redesigned frontend is deployed on Vercel, connecting the source-processing and analytical outputs to dedicated supply-chain, cost and methodology views.",
         "motion": "overview",
         "scene": {
           "asset": "/worlds/home-hershey-world.png",
@@ -9795,71 +9916,7 @@
             "label": "Business-facing scope and uncertainty communication",
             "body": "The code explicitly distinguishes public evidence from confidential company information, modeled costs/routes from observed facts and visual assets from evidence, while linking technical outputs to an operations question."
           }
-        ],
-        "objects": [
-          {
-            "name": "Chocolate product",
-            "kind": "package",
-            "format": "Project component",
-            "detail": "One milk-chocolate product provides a bounded question spanning ingredients, packaging, manufacture, movement and retail context.",
-            "fields": [
-              "Public evidence",
-              "Supply-chain model"
-            ],
-            "visual": "world",
-            "visualData": {
-              "type": "world",
-              "title": "Project world",
-              "content": []
-            }
-          },
-          {
-            "name": "Public evidence",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "A 120-source public corpus is inventoried, extracted, normalized and linked to structured claims and product evidence.",
-            "fields": [
-              "Chocolate product",
-              "Supply-chain model"
-            ],
-            "visual": "source-files",
-            "visualData": {
-              "type": "files",
-              "title": "Public product evidence",
-              "content": [
-                "Reports",
-                "Public tables",
-                "Research",
-                "Retail records"
-              ]
-            }
-          },
-          {
-            "name": "Supply-chain model",
-            "kind": "chart",
-            "format": "Project component",
-            "detail": "A typed flow model and benchmark cost scenarios represent explicit assumptions; they do not claim confidential Hershey supplier or cost information.",
-            "fields": [
-              "Chocolate product",
-              "Public evidence"
-            ],
-            "visual": "supply-flow",
-            "visualData": {
-              "type": "board",
-              "title": "Product-flow model",
-              "content": [
-                "Ingredients",
-                "Manufacture",
-                "Distribution",
-                "Retail"
-              ]
-            }
-          }
-        ],
-        "composition": {
-          "id": "hershey-chapter-0",
-          "layout": "hero"
-        }
+        ]
       },
       {
         "id": "chapter-1",
@@ -9988,6 +10045,81 @@
         "composition": {
           "id": "hershey-chapter-1",
           "layout": "ingredients"
+        }
+      },
+      {
+        "id": "opening-evidence",
+        "title": "The product, the evidence and the model.",
+        "body": "Scopes the study around one 1.55 oz chocolate product and separates ingredients, sourcing, manufacturing, packaging, logistics, retail and cost questions.",
+        "detail": "Chocolate product, Public evidence, Supply-chain model bring this part of Hershey Supply Chain into focus. Select an element to inspect its role and the information it represents.",
+        "motion": "inspect",
+        "scene": {
+          "asset": "/worlds/home-hershey-world.png",
+          "aspect": 1.7768331562167907
+        },
+        "objects": [
+          {
+            "name": "Chocolate product",
+            "kind": "package",
+            "format": "Project component",
+            "detail": "One milk-chocolate product provides a bounded question spanning ingredients, packaging, manufacture, movement and retail context.",
+            "fields": [
+              "Public evidence",
+              "Supply-chain model"
+            ],
+            "visual": "world",
+            "visualData": {
+              "type": "world",
+              "title": "Project world",
+              "content": []
+            }
+          },
+          {
+            "name": "Public evidence",
+            "kind": "plan",
+            "format": "Project component",
+            "detail": "A 120-source public corpus is inventoried, extracted, normalized and linked to structured claims and product evidence.",
+            "fields": [
+              "Chocolate product",
+              "Supply-chain model"
+            ],
+            "visual": "source-files",
+            "visualData": {
+              "type": "files",
+              "title": "Public product evidence",
+              "content": [
+                "Reports",
+                "Public tables",
+                "Research",
+                "Retail records"
+              ]
+            }
+          },
+          {
+            "name": "Supply-chain model",
+            "kind": "chart",
+            "format": "Project component",
+            "detail": "A typed flow model and benchmark cost scenarios represent explicit assumptions; they do not claim confidential Hershey supplier or cost information.",
+            "fields": [
+              "Chocolate product",
+              "Public evidence"
+            ],
+            "visual": "supply-flow",
+            "visualData": {
+              "type": "board",
+              "title": "Product-flow model",
+              "content": [
+                "Ingredients",
+                "Manufacture",
+                "Distribution",
+                "Retail"
+              ]
+            }
+          }
+        ],
+        "composition": {
+          "id": "hershey-opening-evidence",
+          "layout": "hero"
         }
       },
       {
@@ -10513,9 +10645,9 @@
       },
       {
         "id": "chapter-7",
-        "title": "Explain what exists and what is still changing.",
-        "body": "The project has a substantive source-to-evidence-to-model pipeline and analytical outputs that can be examined independently of its interface. Current frontend work is making those results easier to understand through product subjects, business questions and source-linked cost details.",
-        "detail": "The frontend redesign now includes dedicated story pages for the supply-chain flow, cost model and methodology, with source-linked records and an original-report reader. Current local work is in cross-page verification; that is separate from the deployed version linked in the opening section. The public-evidence backend remains the basis of the displayed model and calculations.",
+        "title": "Explore the deployed evidence workbench.",
+        "body": "The deployed project connects its source-to-evidence-to-model pipeline to dedicated story pages for supply-chain flow, cost modeling and methodology. Product subjects and business questions organize the public evidence.",
+        "detail": "Source-linked records and an original-report reader let visitors inspect the material behind the displayed model and calculations. Deployment establishes an available interface; the underlying supplier, cost and modeling limitations remain explicit.",
         "motion": "overview",
         "scene": {
           "asset": "/worlds/hershey-scenes.png",
@@ -10633,7 +10765,7 @@
     ],
     "links": [
       {
-        "label": "Existing live project",
+        "label": "Live project",
         "url": "https://hershey-supply-chain-ai.vercel.app/"
       },
       {
