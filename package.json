@@ -1,0 +1,27 @@
+{
+  "name": "ai-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Praveen Rathee's portfolio of business analysis, forecasting, AI workflows and operational insight.",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4173 --strictPort",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort"
+  },
+  "dependencies": {
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "lucide-react": "1.47.0"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "vite": "8.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0"
+  }
+}

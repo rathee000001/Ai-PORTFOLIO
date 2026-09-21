@@ -1,0 +1,37 @@
+import EvidenceLink from './EvidenceLink';
+import {useEffect,useState} from 'react';
+import type {CSSProperties} from 'react';
+import {ArrowLeft,ArrowRight,ArrowUpRight} from 'lucide-react';
+import {Header} from './Gateway';
+import {worldCategories,worldDestination} from './worldCategories';
+import type {WorldCategory} from './worldCategories';
+import type {Project} from './types';
+import './homeGateway.css';
+const chapters=[
+ {name:'Welcome',title:'From business questions to inspectable work.',body:'I’m Praveen Rathee—a business analyst with property-operations experience and an MBA in Operations & Supply Chain Management. My work connects business questions, analytical models and AI-assisted systems.',note:'Scroll through this introduction, or click a visible world to enter its category.'},
+ {name:'About Praveen',title:'About Praveen Rathee.',body:'I’m a Business Analyst with three years of experience at Global Infrastructure & Advisory Services and an MBA in Operations & Supply Chain Management. My Physics background adds quantitative discipline. I connect stakeholder questions with structured records, reporting, forecasting and decision support. In my technical projects, I use AI-assisted development while owning the problem, requirements, workflow, review criteria, debugging direction and validation.',note:'The work here shows how I think: clarify the question, organize the evidence, test the method and explain what the result can support.'},
+ {name:'Follow the work',title:'Follow the question, the decisions and the result.',body:'Experience opens the professional story. AI Workflows, Forecasting, Campaigns, Analysis, and Operations & Supply Chain each open a separate category world. Where a category holds several projects, each appears as its own project node.',note:'A world with one destination opens its story directly. A world with several projects shows their individual nodes. Each project has its own scroll-driven story.'},
+ {name:'Inspect the evidence',title:'Open the original work. See what supports the story.',body:'Inside each project, scroll forwards or backwards through its accepted scene sequence: the question, my contribution, the approach, the workflow, the results and the limits. Website, GitHub, workbook, Tableau, report and presentation links connect the story to the original work.',note:'There are no popup information panels. Project information belongs in that project’s page; Home remains the entrance.'}
+];
+const positions:Record<string,{x:number;y:number;rx:number;ry:number}>= {
+ experience:{x:.365,y:.421,rx:.067,ry:.236},
+ 'ai-workflows':{x:.503,y:.438,rx:.062,ry:.218},
+ forecasting:{x:.625,y:.455,rx:.051,ry:.199},
+ campaigns:{x:.732,y:.474,rx:.047,ry:.181},
+ analysis:{x:.828,y:.484,rx:.044,ry:.172},
+ 'operations-supply-chain':{x:.927,y:.498,rx:.049,ry:.159}
+};
+export default function HomeGateway(props:{projects:Project[];paused:boolean;reduced:boolean;onToggleMotion:()=>void}){
+ const [progress,setProgress]=useState(0),[size,setSize]=useState(()=>({w:innerWidth,h:innerHeight})),[departing,setDeparting]=useState(false),[origin,setOrigin]=useState('70% 45%');
+ const cameraStops=[1,1.13,1,1.09];const cameraIndex=Math.min(2,Math.floor(progress));const cameraPart=progress-cameraIndex;const cameraZoom=cameraStops[cameraIndex]+(cameraStops[cameraIndex+1]-cameraStops[cameraIndex])*cameraPart;
+ const sceneAssets=['/worlds/home-six-ordered.png','/worlds/home-section-open.png','/worlds/home-section-follow.png','/worlds/home-section-evidence.png'];
+ const motionOff=props.paused||props.reduced;const active=Math.min(3,Math.floor(progress+.35));const chapter=chapters[active];
+ useEffect(()=>{const update=()=>{setSize({w:innerWidth,h:innerHeight});setProgress(Math.max(0,Math.min(3,scrollY/innerHeight)));};if(location.hash.startsWith('#world-')){history.replaceState({},'','/');scrollTo({top:0,behavior:'instant'});}const target=location.hash==='#categories'?0:Number(location.hash.replace('#home-',''));if(Number.isFinite(target)&&target>=0&&target<4)scrollTo({top:target*innerHeight,behavior:'instant'});window.addEventListener('scroll',update,{passive:true});window.addEventListener('resize',update);update();return()=>{window.removeEventListener('scroll',update);window.removeEventListener('resize',update);};},[]);
+ useEffect(()=>{const followHash=()=>{const i=location.hash==='#categories'?0:Number(location.hash.replace('#home-',''));if(Number.isFinite(i)&&i>=0&&i<4)scrollTo({top:i*innerHeight,behavior:motionOff?'instant':'smooth'});};window.addEventListener('hashchange',followHash);return()=>window.removeEventListener('hashchange',followHash);},[motionOff]);
+ const go=(i:number)=>{history.replaceState({},'',`/#home-${i}`);scrollTo({top:i*innerHeight,behavior:motionOff?'instant':'smooth'});};
+ const enter=(e:React.MouseEvent<HTMLAnchorElement>,c:WorldCategory)=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();const r=e.currentTarget.getBoundingClientRect();setOrigin(`${r.x+r.width/2}px ${r.y+r.height/2}px`);setDeparting(true);setTimeout(()=>{location.href=worldDestination(c,props.projects);},motionOff?0:650);};
+ const aspect=size.w/size.h,imageAspect=1664/941,sx=aspect<imageAspect?imageAspect/aspect:1,sy=aspect>imageAspect?aspect/imageAspect:1;
+ return <div className={`home-gateway ${motionOff?'entry-still':''} ${departing?'entry-departing':''}`} style={{'--entry-origin':origin,'--entry-zoom':motionOff?1:cameraZoom} as CSSProperties}><div className="entry-scene"><>{sceneAssets.map((asset,i)=><div key={asset} className="entry-art" style={{backgroundImage:`url("${asset}")`,opacity:motionOff?(i===active?1:0):i<=Math.floor(progress)?1:i===Math.ceil(progress)?progress%1:0}}/>)}</><nav className="entry-world-links" aria-label="Clickable category worlds" inert={progress>.3} style={{opacity:Math.max(0,1-progress*4),pointerEvents:progress>.3?'none':undefined}}>{worldCategories.map(c=>{const p=positions[c.slug];return <a key={c.slug} href={worldDestination(c,props.projects)} onClick={e=>enter(e,c)} aria-label={`Enter ${c.name} world`} style={{left:`${50+(p.x-.5)*100*sx}%`,top:`${50+(p.y-.5)*100*sy}%`,width:`${p.rx*200*sx}%`,height:`${p.ry*200*sy}%`,'--portal-color':c.color,'--portal-art':'url('+c.asset+')'} as CSSProperties}><span>{c.name}<ArrowUpRight size={12}/></span></a>;})}</nav></div><Header {...props}/><main className="entry-copy" key={active}><p className="entry-kicker">{String(active+1).padStart(2,'0')} / {chapter.name.toUpperCase()} · PRAVEEN RATHEE</p><h1>{chapter.title}</h1><p className="entry-body">{chapter.body}</p><p className="entry-help">{chapter.note}</p><div className="entry-actions">{active===0?<><EvidenceLink url="https://www.linkedin.com/in/praveen-rathee-8b028030b/" label="LinkedIn"/><EvidenceLink url="https://github.com/rathee000001" label="GitHub"/></>:null}</div></main><nav className="entry-sections" aria-label="Home sections">{chapters.map((c,i)=><button key={c.name} onClick={()=>go(i)} aria-current={active===i?'step':undefined}>{String(i+1).padStart(2,'0')}<span>{c.name}</span></button>)}</nav><div className="entry-bottom"><button disabled={active===0} onClick={()=>go(active-1)}><ArrowLeft size={15}/> Back</button><span>Home · {chapter.name} · {active+1}/4</span><button disabled={active===3} onClick={()=>go(active+1)}>Next <ArrowRight size={15}/></button></div><div style={{height:'400svh'}} aria-hidden="true"/></div>;
+}
+
+

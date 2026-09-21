@@ -1,0 +1,1743 @@
+{
+  "world": {
+    "type": "world",
+    "title": "Project world",
+    "content": []
+  },
+  "property-table": {
+    "type": "table",
+    "title": "Property register",
+    "content": [
+      [
+        "City",
+        "Use category",
+        "Lifecycle"
+      ],
+      [
+        "Inventory",
+        "Pricing",
+        "Follow-up"
+      ]
+    ],
+    "headers": [
+      "Location",
+      "Type",
+      "Status"
+    ]
+  },
+  "decision-dashboard": {
+    "type": "board",
+    "title": "Decision views",
+    "content": [
+      "Inventory",
+      "Availability",
+      "Pricing",
+      "Exceptions"
+    ]
+  },
+  "lookup": {
+    "type": "formula",
+    "title": "Linked spreadsheet fields",
+    "content": [
+      "VLOOKUP",
+      "Shared record fields",
+      "Consistent updates"
+    ]
+  },
+  "status-board": {
+    "type": "board",
+    "title": "Property lifecycle",
+    "content": [
+      "Rental",
+      "Sale",
+      "Lease",
+      "Follow-up"
+    ]
+  },
+  "management": {
+    "type": "table",
+    "title": "Management view",
+    "content": [
+      [
+        "Inventory",
+        "Exceptions",
+        "Actions"
+      ]
+    ],
+    "headers": [
+      "Review",
+      "Priority",
+      "Follow-up"
+    ]
+  },
+  "sales": {
+    "type": "table",
+    "title": "Sales / broker view",
+    "content": [
+      [
+        "Property options",
+        "Comparisons",
+        "Follow-up"
+      ]
+    ],
+    "headers": [
+      "Availability",
+      "Pricing",
+      "Status"
+    ]
+  },
+  "builder": {
+    "type": "table",
+    "title": "Builder view",
+    "content": [
+      [
+        "Scope",
+        "Suitability",
+        "Status"
+      ]
+    ],
+    "headers": [
+      "Requirements",
+      "Property",
+      "Review"
+    ]
+  },
+  "client": {
+    "type": "table",
+    "title": "Client-facing view",
+    "content": [
+      [
+        "Requirements",
+        "Filtered views",
+        "Follow-up"
+      ]
+    ],
+    "headers": [
+      "Need",
+      "Options",
+      "Next step"
+    ]
+  },
+  "excel-report": {
+    "type": "table",
+    "title": "Excel reporting",
+    "content": [
+      [
+        "Records",
+        "Formulas",
+        "Review view"
+      ]
+    ],
+    "headers": [
+      "Inputs",
+      "Calculation",
+      "Output"
+    ]
+  },
+  "tableau-report": {
+    "type": "board",
+    "title": "Tableau view",
+    "content": [
+      "Calculated fields",
+      "Filters",
+      "Comparison",
+      "Tooltips"
+    ]
+  },
+  "feedback": {
+    "type": "notes",
+    "title": "Review feedback",
+    "content": [
+      "Questions",
+      "Revised definitions",
+      "Updated views"
+    ]
+  },
+  "outcome": {
+    "type": "metrics",
+    "title": "Reported workflow outcome",
+    "content": [
+      [
+        "~30%",
+        "Internal review improvement"
+      ],
+      [
+        "10+",
+        "Reporting assets"
+      ]
+    ],
+    "caption": "Experience account; not an independent audit"
+  },
+  "recognition": {
+    "type": "sprite",
+    "title": "Recommendation",
+    "content": [],
+    "sheet": "domain",
+    "frame": 14
+  },
+  "plan-board": {
+    "type": "board",
+    "title": "Authoritative Plan",
+    "content": [
+      "Task",
+      "Scope",
+      "Checks",
+      "Recorded result"
+    ]
+  },
+  "receipt": {
+    "type": "table",
+    "title": "Operation record",
+    "content": [
+      [
+        "Identity",
+        "Evidence",
+        "Returned state"
+      ]
+    ],
+    "headers": [
+      "Request",
+      "Check",
+      "Result"
+    ]
+  },
+  "intent": {
+    "type": "orb",
+    "title": "Project intention",
+    "content": [
+      "Outcome",
+      "Boundaries",
+      "Selected evidence"
+    ]
+  },
+  "workflow-menu": {
+    "type": "board",
+    "title": "24 user-facing workflows",
+    "content": [
+      "Understand",
+      "Sources",
+      "Plan",
+      "Execute",
+      "Inspect",
+      "Recover"
+    ]
+  },
+  "scope": {
+    "type": "passport",
+    "title": "Selected scope",
+    "content": [
+      "Project identity",
+      "Source selection",
+      "Allowed actions"
+    ]
+  },
+  "source-files": {
+    "type": "files",
+    "title": "Mixed source intake",
+    "content": [
+      "Documents",
+      "Workbooks",
+      "PDF / OCR",
+      "Code / Git"
+    ]
+  },
+  "source-locator": {
+    "type": "table",
+    "title": "Source trail",
+    "content": [
+      [
+        "Source",
+        "Locator",
+        "Hash"
+      ]
+    ],
+    "headers": [
+      "Identity",
+      "Location",
+      "Integrity"
+    ]
+  },
+  "evidence-index": {
+    "type": "table",
+    "title": "Evidence index",
+    "content": [
+      [
+        "Located records",
+        "Bounded slices",
+        "Attribution"
+      ]
+    ],
+    "headers": [
+      "Source",
+      "Content",
+      "Retrieval"
+    ]
+  },
+  "api-contract": {
+    "type": "api",
+    "title": "Typed MCP operation",
+    "content": [
+      "Request",
+      "Validated scope",
+      "Result"
+    ]
+  },
+  "permission": {
+    "type": "passport",
+    "title": "Connector grant",
+    "content": [
+      "Purpose",
+      "Allowed scope",
+      "Expiry / revocation"
+    ]
+  },
+  "readiness": {
+    "type": "table",
+    "title": "Operation readiness",
+    "content": [
+      [
+        "Dependency",
+        "Capability",
+        "Selected operation"
+      ]
+    ],
+    "headers": [
+      "Tool",
+      "Host",
+      "Scope"
+    ]
+  },
+  "studio": {
+    "type": "board",
+    "title": "Read-only Studio",
+    "content": [
+      "Plan",
+      "Jobs",
+      "Evidence",
+      "Connections",
+      "Toolchain",
+      "Diagnostics"
+    ]
+  },
+  "checks": {
+    "type": "review",
+    "title": "Verification record",
+    "content": [
+      "Inputs",
+      "Checks performed",
+      "Actual effects"
+    ]
+  },
+  "history": {
+    "type": "timeline",
+    "title": "Project history",
+    "content": [
+      "Sources",
+      "Plan state",
+      "Recorded work",
+      "Next session"
+    ]
+  },
+  "handoff": {
+    "type": "timeline",
+    "title": "Context handoff",
+    "content": [
+      "Selected state",
+      "Attributed material",
+      "Receiving task"
+    ]
+  },
+  "guides": {
+    "type": "books",
+    "title": "Public documentation",
+    "content": [
+      "24 workflow guides",
+      "43 public guides",
+      "User intent"
+    ]
+  },
+  "manifest": {
+    "type": "code",
+    "title": "Release manifest",
+    "content": [
+      "v4.0.7",
+      "Source identity",
+      "Package boundaries"
+    ]
+  },
+  "test-results": {
+    "type": "metrics",
+    "title": "Selected verification",
+    "content": [
+      [
+        "159",
+        "Selected CI/package tests"
+      ],
+      [
+        "43",
+        "Public guides"
+      ]
+    ],
+    "caption": "Reported release scope"
+  },
+  "release-scope": {
+    "type": "board",
+    "title": "What is established",
+    "content": [
+      "Published source",
+      "Public guides",
+      "Selected checks"
+    ]
+  },
+  "qualification": {
+    "type": "board",
+    "title": "Separate qualification",
+    "content": [
+      "Source",
+      "Installed environment",
+      "Native operation",
+      "All workflows"
+    ]
+  },
+  "review-states": {
+    "type": "board",
+    "title": "Review boundary",
+    "content": [
+      "Proposed change",
+      "Review packet",
+      "Accepted baseline"
+    ]
+  },
+  "snapshot": {
+    "type": "sprite",
+    "title": "Portable snapshot",
+    "content": [],
+    "sheet": "domain",
+    "frame": 15
+  },
+  "spreadsheet-source": {
+    "type": "table",
+    "title": "Workbook input",
+    "content": [
+      [
+        "Sheets",
+        "Defined names",
+        "Source links"
+      ]
+    ],
+    "headers": [
+      "Cells",
+      "Formulas",
+      "Relationships"
+    ]
+  },
+  "code-source": {
+    "type": "code",
+    "title": "Source excerpt",
+    "content": []
+  },
+  "pdf-source": {
+    "type": "files",
+    "title": "PDF and image input",
+    "content": [
+      "Page text",
+      "Image regions",
+      "OCR",
+      "Source location"
+    ]
+  },
+  "candidate": {
+    "type": "glass-stack",
+    "title": "Candidate work",
+    "content": [
+      "Proposed changes",
+      "Preserved baseline"
+    ]
+  },
+  "native-bridge": {
+    "type": "api",
+    "title": "Native command bridge",
+    "content": [
+      "React / TypeScript",
+      "Tauri / Rust",
+      "Python worker"
+    ]
+  },
+  "worker": {
+    "type": "code",
+    "title": "Persistent Python worker",
+    "content": []
+  },
+  "database": {
+    "type": "sprite",
+    "title": "Portable SQLite records",
+    "content": [],
+    "sheet": "skills",
+    "frame": 5
+  },
+  "version-diff": {
+    "type": "comparison",
+    "title": "Version comparison",
+    "content": [
+      "Baseline",
+      "Changed material",
+      "Difference"
+    ]
+  },
+  "hash-check": {
+    "type": "sprite",
+    "title": "Integrity checks",
+    "content": [],
+    "sheet": "domain",
+    "frame": 13
+  },
+  "architecture": {
+    "type": "board",
+    "title": "Connected architecture",
+    "content": [
+      "Interface",
+      "Commands",
+      "Workers",
+      "Records"
+    ]
+  },
+  "recovery": {
+    "type": "sprite",
+    "title": "Recoverable state",
+    "content": [],
+    "sheet": "domain",
+    "frame": 15
+  },
+  "plugin-evolution": {
+    "type": "timeline",
+    "title": "Project evolution",
+    "content": [
+      "Desktop prototype",
+      "Workflow lessons",
+      "Plugin generation"
+    ]
+  },
+  "model-comparison": {
+    "type": "table",
+    "title": "Model comparison",
+    "content": [
+      [
+        "Classical",
+        "Benchmarks"
+      ],
+      [
+        "Deep ML",
+        "Temporal outputs"
+      ],
+      [
+        "Evaluation",
+        "Artifacts and limits"
+      ]
+    ],
+    "headers": [
+      "Family",
+      "Output"
+    ]
+  },
+  "artifact-catalog": {
+    "type": "table",
+    "title": "Artifact catalogue",
+    "content": [
+      [
+        "CSV / JSON",
+        "Predictions and metadata"
+      ],
+      [
+        "Parquet",
+        "Numeric feature stores"
+      ]
+    ],
+    "headers": [
+      "Format",
+      "Contents"
+    ]
+  },
+  "api-sources": {
+    "type": "api",
+    "title": "Public data adapters",
+    "content": [
+      "Source response",
+      "Normalization",
+      "Dated records"
+    ]
+  },
+  "date-grid": {
+    "type": "table",
+    "title": "Date alignment",
+    "content": [
+      [
+        "Month end",
+        "Aligned series",
+        "Missingness"
+      ]
+    ],
+    "headers": [
+      "Date key",
+      "Source",
+      "Coverage"
+    ]
+  },
+  "coverage": {
+    "type": "board",
+    "title": "Source coverage",
+    "content": [
+      "Availability",
+      "Cutoff",
+      "Missing values",
+      "Staleness"
+    ]
+  },
+  "feature-grid": {
+    "type": "board",
+    "title": "Feature engineering",
+    "content": [
+      "Lags",
+      "Returns",
+      "Moving averages",
+      "Volatility",
+      "Horizons"
+    ]
+  },
+  "feature-store": {
+    "type": "table",
+    "title": "Reusable feature store",
+    "content": [
+      [
+        "Numeric values",
+        "Transform history",
+        "Version"
+      ]
+    ],
+    "headers": [
+      "Date",
+      "Feature",
+      "Run"
+    ]
+  },
+  "run-record": {
+    "type": "table",
+    "title": "Run metadata",
+    "content": [
+      [
+        "Parameters",
+        "Cutoff",
+        "Outputs"
+      ]
+    ],
+    "headers": [
+      "Model",
+      "Window",
+      "Artifacts"
+    ]
+  },
+  "classical-models": {
+    "type": "table",
+    "title": "Classical model suite",
+    "content": [
+      [
+        "Naive / MA",
+        "Baseline"
+      ],
+      [
+        "ARIMA / SARIMAX",
+        "Time series"
+      ],
+      [
+        "Regression / XGBoost",
+        "Comparison"
+      ]
+    ],
+    "headers": [
+      "Method",
+      "Role"
+    ]
+  },
+  "diagnostics": {
+    "type": "board",
+    "title": "Model diagnostics",
+    "content": [
+      "Coefficients",
+      "Residuals",
+      "ADF / ACF / PACF",
+      "Ljung–Box"
+    ]
+  },
+  "evaluation-window": {
+    "type": "timeline",
+    "title": "Evaluation design",
+    "content": [
+      "Training",
+      "Evaluation",
+      "Recorded metrics"
+    ]
+  },
+  "neural-model": {
+    "type": "board",
+    "title": "Temporal model",
+    "content": [
+      "GRU / LSTM",
+      "Attention",
+      "Multi-horizon heads",
+      "Training controls"
+    ]
+  },
+  "quantiles": {
+    "type": "interval",
+    "title": "Quantile structure",
+    "content": [
+      "P10",
+      "P50",
+      "P90"
+    ]
+  },
+  "uncertainty": {
+    "type": "board",
+    "title": "Sensitivity and uncertainty",
+    "content": [
+      "MC dropout",
+      "Residual adjustment",
+      "Attention",
+      "Occlusion"
+    ]
+  },
+  "query-view": {
+    "type": "code",
+    "title": "Read-only exploration",
+    "content": [
+      "CSV / JSON",
+      "Safe SELECT",
+      "Projection and export"
+    ]
+  },
+  "grounding": {
+    "type": "notes",
+    "title": "Grounded explanation",
+    "content": [
+      "Retrieved artifacts",
+      "Source links",
+      "Visible limits"
+    ]
+  },
+  "omega": {
+    "type": "forecast",
+    "title": "Saved Omega output",
+    "content": [],
+    "caption": "Origin 2026-05-05 · archived example"
+  },
+  "consistency": {
+    "type": "review",
+    "title": "Artifact consistency",
+    "content": [
+      "Saved predictions",
+      "Evaluation outputs",
+      "Metadata agreement"
+    ]
+  },
+  "model-limits": {
+    "type": "review",
+    "title": "Interpretation boundaries",
+    "content": [
+      "Inputs",
+      "Assumptions",
+      "Validation scope"
+    ]
+  },
+  "ridge": {
+    "type": "formula",
+    "title": "Ridge calculation",
+    "content": [
+      "y = β₀ + Xβ",
+      "L2 regularization",
+      "Intercept unpenalized"
+    ]
+  },
+  "scenario": {
+    "type": "fan",
+    "title": "Conditional scenarios",
+    "content": [
+      "Inputs",
+      "Proxy assumptions",
+      "Alternative outcomes"
+    ]
+  },
+  "factor-matrix": {
+    "type": "table",
+    "title": "Regression matrix",
+    "content": [
+      [
+        "Ordered months",
+        "Gold price",
+        "19 factors"
+      ]
+    ],
+    "headers": [
+      "Date",
+      "Target",
+      "Covariates"
+    ]
+  },
+  "coefficient-table": {
+    "type": "table",
+    "title": "Coefficient outputs",
+    "content": [
+      [
+        "Intercept",
+        "Unpenalized",
+        "Fit statistics"
+      ],
+      [
+        "Factors",
+        "Regularized",
+        "Residual review"
+      ]
+    ],
+    "headers": [
+      "Term",
+      "Coefficient",
+      "Diagnostics"
+    ]
+  },
+  "training-window": {
+    "type": "period",
+    "title": "Training period",
+    "content": [
+      "2006–2020",
+      "Fit the coefficients"
+    ]
+  },
+  "coefficient-lock": {
+    "type": "lock",
+    "title": "Frozen coefficients",
+    "content": [
+      "Same fitted parameters",
+      "Later-period application"
+    ]
+  },
+  "test-window": {
+    "type": "period",
+    "title": "Later-period evaluation",
+    "content": [
+      "2021–May 2025",
+      "Apply fixed coefficients"
+    ]
+  },
+  "contribution": {
+    "type": "board",
+    "title": "Factor contributions",
+    "content": [
+      "Direction",
+      "Contribution",
+      "Comparison"
+    ]
+  },
+  "regimes": {
+    "type": "board",
+    "title": "Regime exploration",
+    "content": [
+      "Time period",
+      "Context",
+      "Model behavior"
+    ]
+  },
+  "export-table": {
+    "type": "table",
+    "title": "Analytical export",
+    "content": [
+      [
+        "Typed fields",
+        "Source context",
+        "Portable artifacts"
+      ]
+    ],
+    "headers": [
+      "Data",
+      "Method",
+      "Output"
+    ]
+  },
+  "method-guide": {
+    "type": "books",
+    "title": "Method documentation",
+    "content": [
+      "Inputs",
+      "Calculation",
+      "Evaluation",
+      "Limitations"
+    ]
+  },
+  "evolution": {
+    "type": "timeline",
+    "title": "Analytical progression",
+    "content": [
+      "Spreadsheet",
+      "Regression platform",
+      "Broader analytics"
+    ]
+  },
+  "six-factors": {
+    "type": "table",
+    "title": "Six predictors",
+    "content": [
+      [
+        "Nominal yield",
+        "GPR"
+      ],
+      [
+        "CPI",
+        "VIX"
+      ],
+      [
+        "USD index",
+        "Central-bank reserves"
+      ]
+    ],
+    "headers": [
+      "Macro inputs",
+      "Risk / reserves"
+    ]
+  },
+  "coefficient-sheet": {
+    "type": "table",
+    "title": "Model coefficient sheet",
+    "content": [
+      [
+        "Intercept + 6 factors",
+        "Stored coefficients"
+      ],
+      [
+        "Prediction rows",
+        "Same formula"
+      ]
+    ],
+    "headers": [
+      "Term",
+      "Application"
+    ]
+  },
+  "prediction-sheet": {
+    "type": "table",
+    "title": "Prediction worksheet",
+    "content": [
+      [
+        "Aligned rows",
+        "Observed series",
+        "Model output"
+      ]
+    ],
+    "headers": [
+      "Date",
+      "Actual",
+      "Predicted"
+    ]
+  },
+  "error-formulas": {
+    "type": "formula",
+    "title": "Error definitions",
+    "content": [
+      "Row error",
+      "MAD",
+      "MAPE"
+    ]
+  },
+  "training-sheet": {
+    "type": "period",
+    "title": "In-sample worksheet",
+    "content": [
+      "Training rows",
+      "Model fit"
+    ]
+  },
+  "test-sheet": {
+    "type": "period",
+    "title": "Later-period worksheet",
+    "content": [
+      "Later observations",
+      "Error comparison"
+    ]
+  },
+  "mape": {
+    "type": "bars",
+    "title": "MAPE comparison",
+    "content": [
+      [
+        "In-sample",
+        9.22
+      ],
+      [
+        "Later period",
+        21.2
+      ]
+    ],
+    "unit": "%"
+  },
+  "strategy-map": {
+    "type": "board",
+    "title": "Campaign strategy",
+    "content": [
+      "Mission",
+      "Audience",
+      "Positioning",
+      "Plan"
+    ]
+  },
+  "audience": {
+    "type": "sprite",
+    "title": "Supporter audience",
+    "content": [],
+    "sheet": "domain",
+    "frame": 9
+  },
+  "segmentation": {
+    "type": "board",
+    "title": "Four-dimensional segmentation",
+    "content": [
+      "Geographic",
+      "Demographic",
+      "Psychographic",
+      "Behavioral"
+    ]
+  },
+  "priority": {
+    "type": "rank",
+    "title": "Target priorities",
+    "content": [
+      "Mission fit",
+      "Resources",
+      "Participation"
+    ]
+  },
+  "benchmark": {
+    "type": "table",
+    "title": "Peer comparison",
+    "content": [
+      [
+        "Reference formats",
+        "Audience fit",
+        "Positioning"
+      ]
+    ],
+    "headers": [
+      "Campaign",
+      "Approach",
+      "Lesson"
+    ]
+  },
+  "positioning": {
+    "type": "sprite",
+    "title": "Positioning and appeal",
+    "content": [],
+    "sheet": "domain",
+    "frame": 10
+  },
+  "campaign-calendar": {
+    "type": "sprite",
+    "title": "Campaign sequence",
+    "content": [],
+    "sheet": "domain",
+    "frame": 11
+  },
+  "channels": {
+    "type": "board",
+    "title": "Channel roles",
+    "content": [
+      "Audience",
+      "Appeal",
+      "Material",
+      "Proposed action"
+    ]
+  },
+  "measurement": {
+    "type": "board",
+    "title": "Planning measures",
+    "content": [
+      "Participation",
+      "Engagement",
+      "Contribution",
+      "Review"
+    ]
+  },
+  "presentation": {
+    "type": "sprite",
+    "title": "Presentation artifact",
+    "content": [],
+    "sheet": "skills",
+    "frame": 13
+  },
+  "campaign-kit": {
+    "type": "sprite",
+    "title": "Campaign materials",
+    "content": [],
+    "sheet": "domain",
+    "frame": 8
+  },
+  "web-pages": {
+    "type": "browser",
+    "title": "Project website",
+    "content": [
+      "Structure",
+      "Navigation",
+      "Interaction"
+    ]
+  },
+  "print-layout": {
+    "type": "document",
+    "title": "Print-oriented presentation",
+    "content": [
+      "Strategy pages",
+      "Readable handoff"
+    ]
+  },
+  "supporter-journey": {
+    "type": "timeline",
+    "title": "Supporter journey",
+    "content": [
+      "Discover",
+      "Choose support",
+      "Join",
+      "Confirmation"
+    ]
+  },
+  "contribution-options": {
+    "type": "board",
+    "title": "Proposed contribution choices",
+    "content": [
+      "Books",
+      "Support",
+      "Participation"
+    ]
+  },
+  "events": {
+    "type": "sprite",
+    "title": "Campus event",
+    "content": [],
+    "sheet": "domain",
+    "frame": 11
+  },
+  "selection-state": {
+    "type": "board",
+    "title": "Selection state",
+    "content": [
+      "Chosen option",
+      "Prefilled information",
+      "Next step"
+    ]
+  },
+  "registration": {
+    "type": "form",
+    "title": "Prototype registration",
+    "content": [
+      "Event",
+      "Participant details",
+      "Confirmation"
+    ]
+  },
+  "confirmation": {
+    "type": "review",
+    "title": "Visible feedback",
+    "content": [
+      "Selected action",
+      "Response",
+      "Next step"
+    ]
+  },
+  "campus-page": {
+    "type": "browser",
+    "title": "Campus event page",
+    "content": [
+      "NYIT",
+      "Hofstra",
+      "Stony Brook"
+    ]
+  },
+  "campaign-progress": {
+    "type": "board",
+    "title": "Illustrative campaign display",
+    "content": [
+      "Progress display",
+      "Audience feedback",
+      "Prototype scope"
+    ]
+  },
+  "prototype-scope": {
+    "type": "review",
+    "title": "Prototype boundary",
+    "content": [
+      "Interaction states",
+      "Simulated submission",
+      "No live payments"
+    ]
+  },
+  "style-system": {
+    "type": "board",
+    "title": "Responsive styling",
+    "content": [
+      "Layout",
+      "Typography",
+      "Motion feedback"
+    ]
+  },
+  "shipping": {
+    "type": "sprite",
+    "title": "Shipping mode analysis",
+    "content": [],
+    "sheet": "domain",
+    "frame": 7
+  },
+  "tableau-story": {
+    "type": "board",
+    "title": "Connected Tableau story",
+    "content": [
+      "11 worksheets",
+      "3 dashboards",
+      "3 story points"
+    ]
+  },
+  "item-table": {
+    "type": "metrics",
+    "title": "Item-level records",
+    "content": [
+      [
+        "180,519",
+        "Item rows"
+      ]
+    ],
+    "caption": "Item grain"
+  },
+  "order-table": {
+    "type": "metrics",
+    "title": "Order-level records",
+    "content": [
+      [
+        "65,752",
+        "Distinct orders"
+      ]
+    ],
+    "caption": "Order grain"
+  },
+  "calculated-fields": {
+    "type": "table",
+    "title": "Calculated measures",
+    "content": [
+      [
+        "Item / order",
+        "Aggregation",
+        "Correct denominator"
+      ]
+    ],
+    "headers": [
+      "Grain",
+      "Calculation",
+      "Meaning"
+    ]
+  },
+  "segments": {
+    "type": "sprite",
+    "title": "Customer segments",
+    "content": [],
+    "sheet": "domain",
+    "frame": 9
+  },
+  "market-view": {
+    "type": "map",
+    "title": "Market comparison",
+    "content": [
+      "Markets",
+      "Segments",
+      "Demand"
+    ]
+  },
+  "product-ranking": {
+    "type": "rank",
+    "title": "Product concentration",
+    "content": [
+      "Products",
+      "Revenue",
+      "Relative importance"
+    ]
+  },
+  "delivery-time": {
+    "type": "table",
+    "title": "Delivery measures",
+    "content": [
+      [
+        "Mode",
+        "Observed time",
+        "Recorded expectation"
+      ]
+    ],
+    "headers": [
+      "Shipping",
+      "Actual days",
+      "Scheduled days"
+    ]
+  },
+  "delivery-risk": {
+    "type": "review",
+    "title": "Delivery risk",
+    "content": [
+      "Delivery status",
+      "Late-delivery field",
+      "Comparison"
+    ]
+  },
+  "filter-controls": {
+    "type": "board",
+    "title": "Cross-chart filters",
+    "content": [
+      "Market",
+      "Segment",
+      "Product",
+      "Shipping mode"
+    ]
+  },
+  "operational-patterns": {
+    "type": "board",
+    "title": "Operational questions",
+    "content": [
+      "Demand",
+      "Product mix",
+      "Fulfillment"
+    ]
+  },
+  "warehouse": {
+    "type": "sprite",
+    "title": "Fulfillment context",
+    "content": [],
+    "sheet": "domain",
+    "frame": 5
+  },
+  "ratio-sheet": {
+    "type": "table",
+    "title": "Ratio framework",
+    "content": [
+      [
+        "Margins",
+        "Returns",
+        "Turnover"
+      ]
+    ],
+    "headers": [
+      "Liquidity",
+      "Leverage",
+      "Efficiency"
+    ]
+  },
+  "financial-report": {
+    "type": "document",
+    "title": "Financial analysis report",
+    "content": [
+      "Company comparison",
+      "Six-year scope",
+      "Interpretation"
+    ]
+  },
+  "filings": {
+    "type": "sprite",
+    "title": "SEC filing inputs",
+    "content": [],
+    "sheet": "domain",
+    "frame": 12
+  },
+  "company-matrix": {
+    "type": "table",
+    "title": "Comparison structure",
+    "content": [
+      [
+        "5 pharmaceutical firms",
+        "2018–2023",
+        "Ratio families"
+      ]
+    ],
+    "headers": [
+      "Companies",
+      "Years",
+      "Measures"
+    ]
+  },
+  "year-grid": {
+    "type": "timeline",
+    "title": "Six-year window",
+    "content": [
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ]
+  },
+  "liquidity": {
+    "type": "formula",
+    "title": "Liquidity measures",
+    "content": [
+      "Current ratio",
+      "Quick ratio",
+      "Cash ratio"
+    ]
+  },
+  "margins": {
+    "type": "formula",
+    "title": "Profitability measures",
+    "content": [
+      "Gross margin",
+      "Net margin",
+      "Return measures"
+    ]
+  },
+  "turnover": {
+    "type": "formula",
+    "title": "Efficiency measures",
+    "content": [
+      "Inventory turnover",
+      "Receivables",
+      "Asset turnover"
+    ]
+  },
+  "financial-chart": {
+    "type": "board",
+    "title": "Comparison views",
+    "content": [
+      "Company",
+      "Year",
+      "Ratio",
+      "Context"
+    ]
+  },
+  "source-conflict": {
+    "type": "comparison",
+    "title": "Source discrepancies",
+    "content": [
+      "Reported inputs",
+      "Workbook inputs",
+      "Reconciliation"
+    ]
+  },
+  "formula-check": {
+    "type": "metrics",
+    "title": "Recorded formula review",
+    "content": [
+      [
+        "630",
+        "Formula cells checked"
+      ],
+      [
+        "6",
+        "Formula errors identified"
+      ]
+    ],
+    "caption": "Inspected workbook review"
+  },
+  "stakeholders": {
+    "type": "sprite",
+    "title": "Stakeholder interests",
+    "content": [],
+    "sheet": "domain",
+    "frame": 9
+  },
+  "governance": {
+    "type": "board",
+    "title": "Governance questions",
+    "content": [
+      "Decision rights",
+      "Oversight",
+      "Accountability"
+    ]
+  },
+  "employees": {
+    "type": "sprite",
+    "title": "Employee perspective",
+    "content": [],
+    "sheet": "domain",
+    "frame": 9
+  },
+  "investors": {
+    "type": "rank",
+    "title": "Investor perspective",
+    "content": [
+      "Returns",
+      "Control",
+      "Long-term value"
+    ]
+  },
+  "public-interests": {
+    "type": "notes",
+    "title": "Public perspective",
+    "content": [
+      "Trust",
+      "Privacy",
+      "Wider impact"
+    ]
+  },
+  "culture-framework": {
+    "type": "board",
+    "title": "Competing Values Framework",
+    "content": [
+      "Clan",
+      "Adhocracy",
+      "Market",
+      "Hierarchy"
+    ]
+  },
+  "leadership": {
+    "type": "comparison",
+    "title": "Leadership trade-offs",
+    "content": [
+      "Direction",
+      "Participation",
+      "Control"
+    ]
+  },
+  "biases": {
+    "type": "board",
+    "title": "Decision-process lenses",
+    "content": [
+      "Incentives",
+      "Cognitive bias",
+      "Conflict"
+    ]
+  },
+  "brand-shell": {
+    "type": "browser",
+    "title": "Brand identity",
+    "content": [
+      "Public identity",
+      "Positioning",
+      "Narrative"
+    ]
+  },
+  "decision-rights": {
+    "type": "board",
+    "title": "Organizational structure",
+    "content": [
+      "Control",
+      "Incentives",
+      "Decision rights"
+    ]
+  },
+  "oversight": {
+    "type": "sprite",
+    "title": "Oversight options",
+    "content": [],
+    "sheet": "skills",
+    "frame": 1
+  },
+  "participation": {
+    "type": "sprite",
+    "title": "Stakeholder participation",
+    "content": [],
+    "sheet": "domain",
+    "frame": 9
+  },
+  "accountability": {
+    "type": "review",
+    "title": "Accountability",
+    "content": [
+      "Responsibility",
+      "Transparency",
+      "Review"
+    ]
+  },
+  "case-report": {
+    "type": "document",
+    "title": "Academic case report",
+    "content": [
+      "Public information",
+      "Frameworks",
+      "Recommendations"
+    ]
+  },
+  "supply-flow": {
+    "type": "board",
+    "title": "Product-flow model",
+    "content": [
+      "Ingredients",
+      "Manufacture",
+      "Distribution",
+      "Retail"
+    ]
+  },
+  "ingredients": {
+    "type": "sprite",
+    "title": "Cocoa input",
+    "content": [],
+    "sheet": "domain",
+    "frame": 0
+  },
+  "milk": {
+    "type": "sprite",
+    "title": "Dairy input",
+    "content": [],
+    "sheet": "domain",
+    "frame": 1
+  },
+  "sugar": {
+    "type": "sprite",
+    "title": "Sugar input",
+    "content": [],
+    "sheet": "domain",
+    "frame": 2
+  },
+  "packaging": {
+    "type": "sprite",
+    "title": "Packaging",
+    "content": [],
+    "sheet": "domain",
+    "frame": 3
+  },
+  "supplier-context": {
+    "type": "notes",
+    "title": "Supplier context",
+    "content": [
+      "Public sources",
+      "Relationship scope",
+      "Unresolved links"
+    ]
+  },
+  "source-inventory": {
+    "type": "metrics",
+    "title": "Public-source inventory",
+    "content": [
+      [
+        "120",
+        "Public inputs"
+      ]
+    ],
+    "caption": "Studied source corpus"
+  },
+  "parser": {
+    "type": "board",
+    "title": "Extraction pipeline",
+    "content": [
+      "Inventory",
+      "Extract",
+      "Normalize",
+      "Chunk"
+    ]
+  },
+  "ocr": {
+    "type": "sprite",
+    "title": "Selective OCR",
+    "content": [],
+    "sheet": "skills",
+    "frame": 8
+  },
+  "document-excerpt": {
+    "type": "document",
+    "title": "Source passage",
+    "content": [
+      "Document identity",
+      "Located passage",
+      "Evidence context"
+    ]
+  },
+  "claim-ledger": {
+    "type": "table",
+    "title": "Typed evidence",
+    "content": [
+      [
+        "Statement",
+        "Locator",
+        "Display boundary"
+      ]
+    ],
+    "headers": [
+      "Claim",
+      "Source",
+      "Scope"
+    ]
+  },
+  "flow-nodes": {
+    "type": "metrics",
+    "title": "Product-flow nodes",
+    "content": [
+      [
+        "35",
+        "Nodes"
+      ]
+    ],
+    "caption": "Modeled product flow"
+  },
+  "flow-edges": {
+    "type": "metrics",
+    "title": "Flow relationships",
+    "content": [
+      [
+        "36",
+        "Edges"
+      ]
+    ],
+    "caption": "Explicit model dependencies"
+  },
+  "ingredient-cost": {
+    "type": "sprite",
+    "title": "Ingredient cost inputs",
+    "content": [],
+    "sheet": "skills",
+    "frame": 11
+  },
+  "cost-buckets": {
+    "type": "metrics",
+    "title": "Cost structure",
+    "content": [
+      [
+        "15",
+        "Cost buckets"
+      ],
+      [
+        "12",
+        "Ingredient links"
+      ]
+    ],
+    "caption": "Benchmark model"
+  },
+  "cost-scenario": {
+    "type": "comparison",
+    "title": "Cost scenarios",
+    "content": [
+      "Low",
+      "Base",
+      "High"
+    ]
+  },
+  "retail-receipt": {
+    "type": "receipt",
+    "title": "Retail observations",
+    "content": [
+      "Product",
+      "Observed price",
+      "Unit basis"
+    ]
+  },
+  "unit-check": {
+    "type": "formula",
+    "title": "Unit normalization",
+    "content": [
+      "Pack quantity",
+      "Product mass",
+      "Per-bar comparison"
+    ]
+  },
+  "retail-gap": {
+    "type": "formula",
+    "title": "Commercial residual",
+    "content": [
+      "Retail observation",
+      "Minus modeled physical cost",
+      "Not company profit"
+    ]
+  },
+  "report-reader": {
+    "type": "browser",
+    "title": "Original-report reader",
+    "content": [
+      "Source selection",
+      "Original document",
+      "Page navigation"
+    ]
+  }
+}

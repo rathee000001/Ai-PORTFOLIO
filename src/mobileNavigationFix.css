@@ -1,0 +1,10 @@
+@media(max-width:700px){
+ .gate-header{height:122px!important;display:block!important;padding:14px 6vw!important;position:relative}
+ .gate-header .home-identity{position:absolute;left:6vw;top:13px;padding-top:6px;margin:0}
+ .gate-header nav[aria-label="World navigation"]{position:absolute!important;left:50%!important;top:70px!important;transform:translateX(-50%)!important;white-space:nowrap;gap:10px;width:max-content;max-width:90vw}
+ .gate-header nav[aria-label="World navigation"] a:has(.nav-art-orb){font-size:11px;min-height:40px;padding:5px 13px 5px 6px;gap:8px}
+ .gate-header>button{position:absolute;top:21px;right:6vw;margin:0;min-width:36px;min-height:36px;justify-content:center}
+ .entry-copy{top:146px!important}.entry-copy h1{font-size:31px!important;line-height:1.13}.entry-kicker{font-size:7px;margin-bottom:15px}.entry-body{font-size:12px;line-height:1.75}.entry-help{font-size:11px;line-height:1.65;margin-top:12px}.entry-actions{margin-top:15px;gap:12px}
+ .entry-world-links{height:164px;bottom:63px;padding:8px 7vw 35px;align-items:flex-start;gap:22px}.entry-world-links a{width:83px!important;height:97px!important;background-image:var(--portal-art)!important;background-size:cover!important;background-position:center!important}.entry-world-links a>span{font-size:8px;padding:5px;max-width:110px;bottom:-4px}.entry-sections{bottom:260px}
+ .journey-section{padding-top:146px}.category-world main{padding-top:24px}.project-journey .gate-header{background:linear-gradient(#020905a0,transparent)}
+}
