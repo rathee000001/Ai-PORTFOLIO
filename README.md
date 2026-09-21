@@ -1,5 +1,7 @@
 # Ai PORTFOLIO
 
+[Explore the live portfolio](https://ai-portfolio-kohl-beta.vercel.app/)
+
 **Praveen Rathee — business analysis, forecasting, AI workflows and operational insight.**
 
 Ai PORTFOLIO brings my professional experience and project work into one place. Each project has its own visual world and a story you can follow: the question I explored, my contribution, the decisions behind the work, what was produced, and what the evidence does—and does not—support.

@@ -9,3 +9,4 @@
 @keyframes mini-avatar-wave{0%,100%{background-position:0 0}22%{background-position:33.3333% 0}35%{background-position:66.6667% 0}48%{background-position:33.3333% 0}60%{background-position:66.6667% 0}78%{background-position:100% 0}}
 @media(max-width:700px){.home-identity{padding-top:8px}.avatar-track{top:-15px}.avatar-track .home-avatar{width:21px;height:28px}.home-identity .gate-name .identity-lettering{font-size:24px}.home-identity .identity-subtitle{font-size:5px!important;letter-spacing:1px!important}}
 @media(prefers-reduced-motion:reduce){.avatar-track,.identity-lettering i{animation:none}}
+.avatar-track{top:-11px}@media(max-width:700px){.avatar-track{top:-9px}}
