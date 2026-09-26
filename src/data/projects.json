@@ -793,7 +793,7 @@
     "background": "#10101c",
     "secondary": "#91aafc",
     "world": "archive",
-    "status": "Source release · v4.0.7",
+    "status": "Experimental · Source release · v4.0.7",
     "concept": "/design-references/04-evidence-lane-app.png",
     "description": "Long-running AI work can become fragmented: sources, decisions, unfinished tasks, tools and results end up in different places. I conceived, directed, designed, funded, reviewed and published Evidence Lane to keep that project context connected after the conversation moves on.",
     "limits": "24 workflows; 43 guides. v4.0.7 source release. Studio read-only. All-workflow qualification remains downstream. Human-directed AI-assisted engineering.",
@@ -803,7 +803,7 @@
         "motion": "overview",
         "title": "Keep the project connected.",
         "body": "Long-running AI work can become fragmented: sources, decisions, unfinished tasks, tools and results end up in different places. I conceived, directed, designed, funded, reviewed and published Evidence Lane to keep that project context connected after the conversation moves on.",
-        "detail": "Codex supported the engineering and documentation under my direction and review. The product is a persistent local project system: a person selects the project, directs the work and inspects the recorded result.",
+        "detail": "This is an experimental project. Codex supported the engineering and documentation under my direction and review. The product is a persistent local project system: a person selects the project, directs the work and inspects the recorded result.",
         "metrics": [
           {
             "value": "24",
@@ -2573,7 +2573,7 @@
     "background": "#071713",
     "secondary": "#bdebd5",
     "world": "engine",
-    "status": "Local Windows prototype",
+    "status": "Experimental · Local Windows prototype",
     "concept": "/design-references/03-evidence-lane-plugin.png",
     "description": "The earlier Evidence Lane App explored a practical question: how can a local project retain its source material, proposed changes and accepted state when AI-assisted work evolves? It is the desktop prototype that preceded the current plugin system.",
     "limits": "Local Windows prototype. Candidate versus accepted states; source-linked records; portable SQLite snapshots. No production deployment claim.",
@@ -2582,7 +2582,7 @@
         "id": "chapter-0",
         "title": "A local home for a changing project.",
         "body": "The earlier Evidence Lane App explored a practical question: how can a local project retain its source material, proposed changes and accepted state when AI-assisted work evolves? It is the desktop prototype that preceded the current plugin system.",
-        "detail": "My work focused on the product structure, source-linked records, review boundaries and the integration between a visual interface and persistent local processing. This is prototype and hackathon work, not a claim of a production deployment.",
+        "detail": "This is an experimental project. My work focused on the product structure, source-linked records, review boundaries and the integration between a visual interface and persistent local processing. This is prototype and hackathon work, not a claim of a production deployment.",
         "motion": "overview",
         "scene": {
           "asset": "/worlds/home-plugin-world.png",
