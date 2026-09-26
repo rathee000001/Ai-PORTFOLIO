@@ -793,25 +793,21 @@
     "background": "#10101c",
     "secondary": "#91aafc",
     "world": "archive",
-    "status": "Experimental · Source release · v4.0.7",
+    "status": "Experimental · Development on hold",
     "concept": "/design-references/04-evidence-lane-app.png",
     "description": "Long-running AI work can become fragmented: sources, decisions, unfinished tasks, tools and results end up in different places. I conceived, directed, designed, funded, reviewed and published Evidence Lane to keep that project context connected after the conversation moves on.",
-    "limits": "24 workflows; 43 guides. v4.0.7 source release. Studio read-only. All-workflow qualification remains downstream. Human-directed AI-assisted engineering.",
+    "limits": "Experimental; development on hold. Incomplete and not production-ready. 24 workflows; 43 guides. Studio read-only. All-workflow qualification remains unfinished. Human-directed AI-assisted engineering.",
     "chapters": [
       {
         "id": "chapter-0",
         "motion": "overview",
         "title": "Keep the project connected.",
         "body": "Long-running AI work can become fragmented: sources, decisions, unfinished tasks, tools and results end up in different places. I conceived, directed, designed, funded, reviewed and published Evidence Lane to keep that project context connected after the conversation moves on.",
-        "detail": "This is an experimental project. Codex supported the engineering and documentation under my direction and review. The product is a persistent local project system: a person selects the project, directs the work and inspects the recorded result.",
+        "detail": "Experimental project — active development is currently on hold. Evidence Lane is incomplete and not production-ready. The current build is preserved as an experimental working snapshot and may be resumed later. Do not rely on it for critical or unattended work. Codex supported the engineering and documentation under my direction and review. The product is a persistent local project system: a person selects the project, directs the work and inspects the recorded result.",
         "metrics": [
           {
             "value": "24",
             "label": "user-facing workflows"
-          },
-          {
-            "value": "v4.0.7",
-            "label": "published source release"
           }
         ],
         "scene": {
@@ -1154,7 +1150,7 @@
               "Evidence Lane Plugin"
             ],
             "sourceName": "pyproject.toml",
-            "sourceSnippet": "[project]\nname = \"evidence-lane-plugin\"\nversion = \"4.0.7\"\ndescription = \"Local project state and verified sequential work for Codex.\"\nreadme = \"README.md\"\nrequires-python = \">=3.14,<3.15\"",
+            "sourceSnippet": "[project]\nname = \"evidence-lane-plugin\"\ndescription = \"Local project state and verified sequential work for Codex.\"\nreadme = \"README.md\"\nrequires-python = \">=3.14,<3.15\"",
             "visualData": {
               "type": "code",
               "title": "pyproject.toml",
@@ -1190,7 +1186,7 @@
         "insights": [
           {
             "label": "Typed action contracts",
-            "body": "The v4.0.7 snapshot contains 295 typed SDK/MCP actions. Their inputs and operational checks make project identity, selection scope and readiness explicit before work runs."
+            "body": "The snapshot contains 295 typed SDK/MCP actions. Their inputs and operational checks make project identity, selection scope and readiness explicit before work runs."
           },
           {
             "label": "Tools chosen for the operation",
@@ -1202,7 +1198,7 @@
             "name": "Typed MCP action",
             "kind": "api",
             "format": "Connection",
-            "detail": "The v4.0.7 snapshot contains 295 typed SDK/MCP actions. Their inputs and operational checks make project identity, selection scope and readiness explicit before work runs.",
+            "detail": "The snapshot contains 295 typed SDK/MCP actions. Their inputs and operational checks make project identity, selection scope and readiness explicit before work runs.",
             "fields": [
               "Tool readiness",
               "Connector grant"
@@ -1486,7 +1482,7 @@
         "id": "chapter-6",
         "motion": "reconcile",
         "title": "Ship the system with its explanation.",
-        "body": "The published v4.0.7 source release is accompanied by 43 public guides, including the 24 workflow guides. The documented snapshot records 295 typed actions and 103 retained tool/dependency assignments.",
+        "body": "The published source release is accompanied by 43 public guides, including the 24 workflow guides. The documented snapshot records 295 typed actions and 103 retained tool/dependency assignments.",
         "detail": "The recorded selected CI/package suite passed 159 tests, with scoped Ruff, mypy, CodeQL and public-site route checks. These are bounded engineering and publication results—not a claim of commercial adoption or universal runtime readiness.",
         "metrics": [
           {
@@ -1584,7 +1580,7 @@
               ]
             },
             "sourceName": ".codex-plugin/plugin.json",
-            "sourceSnippet": "{\n  \"name\": \"evidence-lane-plugin\",\n  \"version\": \"4.0.7\",\n  \"homepage\": \"https://evidencelane.org\"\n}"
+            "sourceSnippet": "{\n  \"name\": \"evidence-lane-plugin\",\n  \"homepage\": \"https://evidencelane.org\"\n}"
           }
         ],
         "composition": {
@@ -1619,7 +1615,7 @@
           },
           {
             "label": "Current development scope",
-            "body": "The project remains under local Windows development. Integration readiness is operation-specific, and final native project registration and all-workflow qualification remain separate downstream work."
+            "body": "Active development is currently on hold. The repository, website, plugin and Windows Studio are preserved as an experimental working snapshot and may be resumed later. The project is incomplete and not production-ready; native registration and all-workflow qualification remain unfinished."
           }
         ],
         "objects": [
@@ -1649,7 +1645,7 @@
             "name": "Runtime qualification",
             "kind": "plan",
             "format": "Project component",
-            "detail": "The project remains under local Windows development. Integration readiness is operation-specific, and final native project registration and all-workflow qualification remain separate downstream work.",
+            "detail": "Active development is currently on hold. The repository, website, plugin and Windows Studio are preserved as an experimental working snapshot and may be resumed later. The project is incomplete and not production-ready; native registration and all-workflow qualification remain unfinished.",
             "fields": [
               "Selected test results",
               "Development scope"
@@ -1670,7 +1666,7 @@
             "name": "Development scope",
             "kind": "plan",
             "format": "Project component",
-            "detail": "The project remains under local Windows development. Integration readiness is operation-specific, and final native project registration and all-workflow qualification remain separate downstream work.",
+            "detail": "Active development is currently on hold. The repository, website, plugin and Windows Studio are preserved as an experimental working snapshot and may be resumed later. The project is incomplete and not production-ready; native registration and all-workflow qualification remain unfinished.",
             "fields": [
               "Selected test results",
               "Runtime qualification"
@@ -1680,7 +1676,7 @@
               "type": "notes",
               "title": "Remaining development evidence",
               "content": [
-                "Local Windows development",
+                "Development currently on hold",
                 "Native registration downstream",
                 "All-workflow qualification downstream"
               ]
