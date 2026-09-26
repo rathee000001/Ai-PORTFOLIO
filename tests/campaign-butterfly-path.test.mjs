@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {campaignButterflyPose} from '../src/campaignButterflyPath.ts';
+test('butterfly pauses at the mapped flower and returns to its source position',()=>{const land=campaignButterflyPose(8);assert.equal(land.state,'on-flower');assert.equal(land.x,-27);assert.equal(land.y,28);const end=campaignButterflyPose(18);assert.equal(end.x,0);assert.equal(end.y,0);});
+test('route positions remain continuous at each phase boundary',()=>{for(const t of [3,7,10,14,18]){const a=campaignButterflyPose(t-.00001),b=campaignButterflyPose(t+.00001);assert.ok(Math.hypot(a.x-b.x,a.y-b.y)<.001);}});
+test('route stays in the inspected region without inverted wings',()=>{for(let t=0;t<36;t+=.01){const p=campaignButterflyPose(t);assert.ok(p.x>=-28&&p.x<=5);assert.ok(p.y>=-11&&p.y<=29);assert.ok(p.wing>=.82&&p.wing<=1);}});

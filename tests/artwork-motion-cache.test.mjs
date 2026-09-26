@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {artworkScenes,localMotion,prepareMotionClock} from '../src/artworkMotion.ts';
+test('per-frame cached calculations preserve motion across all registered scene effects',()=>{for(const scene of Object.values(artworkScenes))for(const region of scene.regions)for(const time of [0,.5,2.3,9.2])for(const weight of [0,.3,1]){const x=region.polygon[0][0]+4,y=region.polygon[0][1]+7;assert.deepEqual(localMotion(region,x,y,time,weight,prepareMotionClock(region,time)),localMotion(region,x,y,time,weight));}});

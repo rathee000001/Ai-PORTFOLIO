@@ -13,15 +13,19 @@
     "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort"
   },
   "dependencies": {
+    "@react-three/drei": "10.7.8",
+    "@react-three/fiber": "9.7.0",
+    "lucide-react": "1.47.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
-    "lucide-react": "1.47.0"
+    "three": "0.186.0"
   },
   "devDependencies": {
-    "typescript": "7.0.2",
-    "vite": "8.3.0",
-    "@vitejs/plugin-react": "6.1.1",
     "@types/react": "19.3.0",
-    "@types/react-dom": "19.3.0"
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.186.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.0"
   }
 }

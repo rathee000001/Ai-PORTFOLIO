@@ -6,3 +6,4 @@
 
 @media(min-width:701px){.entry-copy{width:28vw;max-width:520px}.entry-copy h1{font-size:clamp(39px,3.5vw,64px)}.entry-body{font-size:15px;font-weight:500;color:#fff}.entry-sections{top:115px;bottom:auto}}@media(min-width:701px) and (max-width:1300px){.entry-copy{width:29vw}.entry-copy h1{font-size:40px}.entry-body{font-size:13px}.entry-help{font-size:12px}}
 
+@media(max-width:700px){.home-gateway:not(.home-coded-welcome) .entry-art{background-position:72% center}.home-gateway:not(.home-coded-welcome) [data-original-scene-motion]{object-position:72% center}}

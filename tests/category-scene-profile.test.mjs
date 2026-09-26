@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {categoryMotionProfile} from '../src/categorySceneProfiles.ts';
+test('a known category cannot animate a different source image',()=>{assert.equal(categoryMotionProfile({slug:'forecasting',asset:'/worlds/home-plugin-violet.png'}),undefined);assert.equal(categoryMotionProfile({slug:'ai-workflows',asset:'/worlds/home-gna-world.png'}),undefined);});
+test('an unregistered category cannot borrow another page motion profile',()=>assert.equal(categoryMotionProfile({slug:'unknown',asset:'/worlds/home-gna-world.png'}),undefined));
