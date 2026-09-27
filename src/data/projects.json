@@ -51,22 +51,22 @@
     "slug": "experience",
     "shortTitle": "Business Analyst",
     "title": "Business Analyst | Global Infrastructure & Advisory Services",
-    "headline": "Turning fragmented records into clearer decisions.",
+    "headline": "Structured multi-city property, transaction, commission, payment, maintenance and demand information into an Excel/Tableau operating view used by finance, operations and leadership for commercial decisions and follow-up.",
     "family": "Professional experience",
     "accent": "#e6ab73",
     "background": "#171e19",
     "secondary": "#73c3ae",
     "world": "city",
-    "status": "Jan 2021 — Dec 2023",
+    "status": "January 2021 – December 2023 · Full-time · Vadodara, Gujarat, India · Hybrid",
     "concept": "/design-references/02-business-analyst.png",
-    "description": "At Global Infrastructure & Advisory Services, I worked as a Business Analyst across residential, commercial, office, rental, sale and lease workflows. Property and inventory information arrived with inconsistent categories, status definitions and follow-up ownership.",
-    "limits": "1,000+ records; five cities; 20+ workflows; 10+ reports. Approximately 30% internal review improvement is management-feedback-based, not independently audited.",
+    "description": "Structured multi-city property, transaction, commission, payment, maintenance and demand information into an Excel/Tableau operating view used by finance, operations and leadership for commercial decisions and follow-up.",
+    "limits": "Owned the information and analysis layer; supported management and finance decisions. Final pricing, accounting, commission policy, commercial and legal authority remained with authorized teams. Approximately 30% improvement is based on management feedback, not an independent audit. No confidential records or reconstructed sample values are published.",
     "chapters": [
       {
         "id": "chapter-0",
-        "title": "Turn fragmented records into clearer decisions.",
-        "body": "At Global Infrastructure & Advisory Services, I worked as a Business Analyst across residential, commercial, office, rental, sale and lease workflows. Property and inventory information arrived with inconsistent categories, status definitions and follow-up ownership.",
-        "detail": "My role connected data organization, management reporting and stakeholder questions. The aim was a maintainable operating view that people could use repeatedly, rather than a one-time chart built on inconsistent records.",
+        "title": "Business Analyst — Global Infrastructure & Advisory Services (GIAS)",
+        "body": "I worked full-time as a Business Analyst at Global Infrastructure & Advisory Services (GIAS) from January 2021 to December 2023, based in Vadodara, Gujarat, India in a hybrid role. I supported the information and analysis layer for the company's multi-city real-estate commercial operations.",
+        "detail": "I received fragmented property, transaction, finance and field information from agents and operating teams, then cleaned, reconciled and structured it into an Excel operating master. Tableau and management reporting exposed the updated view to finance, operations, the CEO and other decision-makers. I supported management and finance decisions; management and finance retained final pricing, accounting, commission-policy and commercial authority.",
         "motion": "experience-0",
         "scene": {
           "asset": "/worlds/gias-city.png",
@@ -74,20 +74,24 @@
         },
         "insights": [
           {
-            "label": "Business-process diagnosis",
-            "body": "Recognized that inconsistent categories and unclear stakeholder questions were the problem before dashboard presentation."
+            "label": "What I owned",
+            "body": "Owned: data structure, reconciliation, workflow states, KPI/reporting layer and operating visibility."
           },
           {
-            "label": "Operational domain understanding",
-            "body": "Understood the different information needs created by heterogeneous property inventory, partner-supplied access and client-facing work. Company activities are context; they are not all claimed as personal execution."
+            "label": "Management and finance authority",
+            "body": "Management-owned: final pricing, finance, commission-policy and commercial decisions."
+          },
+          {
+            "label": "Company context",
+            "body": "GIAS connected owners, builders and sellers with customers considering a purchase, rental or lease. The operating lifecycle ran from listing and interest through viewing, transaction or non-conversion, payment/commission status, and the relevant lease-support or sale-registration/closure boundary."
           }
         ]
       },
       {
         "id": "chapter-1",
-        "title": "Make the records consistent.",
-        "body": "I standardized 1,000+ property and inventory records across five cities and more than 20 workflows. Shared fields covered location, property type, lifecycle status, pricing, ownership and follow-up.",
-        "detail": "Lookups, linked fields and validation checks helped related information stay consistent as records changed. The structure made the same underlying data usable for inventory review, availability questions and ongoing follow-up.",
+        "title": "Structure the operating information.",
+        "body": "I organized records by city, location/locality, building/project, client/owner/builder, property/building ID and apartment/unit or land/property ID. These identifiers connected property records to customer, agent, viewing, transaction, payment/commission and maintenance information at the appropriate level.",
+        "detail": "The representative operating model covers property and unit status; sale, rental and lease values; asking and market listing prices; property-specific commission terms; expected commission/revenue inputs; cash or cheque mode and clearance status; transaction dates and states; ownership context; maintenance obligations; viewing activity; monthly demand movement; service costs; and follow-up exceptions. Not every field applied to every property type. This is a reconstructed description of the work, not a complete production database schema or a publication of confidential records.",
         "motion": "experience-1",
         "scene": {
           "asset": "/worlds/gias-scenes.png",
@@ -103,189 +107,255 @@
           ],
           "aspect": 1.7768331562167907
         },
-        "metrics": [
-          {
-            "value": "1,000+",
-            "label": "property and inventory records"
-          },
-          {
-            "value": "5",
-            "label": "cities"
-          },
-          {
-            "value": "20+",
-            "label": "workflows"
-          }
-        ],
-        "insights": [
-          {
-            "label": "Multi-location and status segmentation",
-            "body": "Separated city, category, availability, pricing and status dimensions so the same records could answer different operating questions."
-          },
-          {
-            "label": "Spreadsheet lookup and linked-field logic",
-            "body": "Used Excel lookup logic and VLOOKUP to retrieve related information across tracking structures."
-          }
-        ],
-        "objects": [
-          {
-            "name": "Property register",
-            "kind": "table",
-            "format": "Structured records",
-            "detail": "Lookup logic, common status definitions and consistent fields.",
-            "fields": [
-              "Lookup fields",
-              "Status definitions"
-            ],
-            "visual": "property-table",
-            "visualData": {
-              "type": "table",
-              "title": "Property register",
-              "content": [
-                [
-                  "City",
-                  "Use category",
-                  "Lifecycle"
-                ],
-                [
-                  "Inventory",
-                  "Pricing",
-                  "Follow-up"
-                ]
-              ],
-              "headers": [
-                "Location",
-                "Type",
-                "Status"
-              ]
-            }
-          },
-          {
-            "name": "Lookup fields",
-            "kind": "table",
-            "format": "Structured records",
-            "detail": "Used Excel lookup logic and VLOOKUP to retrieve related information across tracking structures.",
-            "fields": [
-              "Property register",
-              "Status definitions"
-            ],
-            "visual": "lookup",
-            "visualData": {
-              "type": "formula",
-              "title": "Linked spreadsheet fields",
-              "content": [
-                "VLOOKUP",
-                "Shared record fields",
-                "Consistent updates"
-              ]
-            }
-          },
-          {
-            "name": "Status definitions",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Separated city, category, availability, pricing and status dimensions so the same records could answer different operating questions.",
-            "fields": [
-              "Property register",
-              "Lookup fields"
-            ],
-            "visual": "status-board",
-            "visualData": {
-              "type": "board",
-              "title": "Property lifecycle",
-              "content": [
-                "Rental",
-                "Sale",
-                "Lease",
-                "Follow-up"
-              ]
-            }
-          }
-        ],
         "composition": {
           "id": "experience-chapter-1",
           "layout": "desk"
-        }
+        },
+        "objects": [
+          {
+            "name": "Entities and identifiers",
+            "kind": "record",
+            "format": "Operating-information view",
+            "detail": "A representative hierarchy connects city and locality to building, property, unit or land identifiers. Customer, agent, viewing, transaction, payment and maintenance records have their own grain.",
+            "fields": [
+              "Commercial and payment fields",
+              "Service and exception fields"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Entities and identifiers",
+              "content": [
+                "City",
+                "Location/locality",
+                "Building/project",
+                "Client/owner/builder",
+                "Property/building ID",
+                "Apartment/unit ID",
+                "Land/property ID for non-apartment inventory",
+                "Customer/prospect/tenant/buyer",
+                "Agent/salesperson",
+                "Transaction/viewing event",
+                "Payment/commission record",
+                "Maintenance/service obligation"
+              ]
+            }
+          },
+          {
+            "name": "Commercial and payment fields",
+            "kind": "record",
+            "format": "Operating-information view",
+            "detail": "Property-specific terms and statuses were structured for review. Finance retained accounting and recognition authority; fields did not apply uniformly to every property type.",
+            "fields": [
+              "Entities and identifiers",
+              "Service and exception fields"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Commercial and payment fields",
+              "content": [
+                "Property or unit status",
+                "Sale price or rental/lease value",
+                "Client asking price",
+                "Market listing price",
+                "Property-specific commission percentage or terms",
+                "Expected commission/revenue input",
+                "Cash/cheque payment mode",
+                "Payment or cheque-clearance status",
+                "Transaction date/status",
+                "Ownership context: builder, client-owned or co-partnered"
+              ]
+            }
+          },
+          {
+            "name": "Service and exception fields",
+            "kind": "record",
+            "format": "Operating-information view",
+            "detail": "Service obligations, viewing activity and follow-up were attached to the relevant property or unit. This list describes field roles without publishing confidential or invented records.",
+            "fields": [
+              "Entities and identifiers",
+              "Commercial and payment fields"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Service and exception fields",
+              "content": [
+                "Maintenance obligation/status",
+                "Customer-viewing activity",
+                "Location/building demand history",
+                "Monthly sales/rental movement",
+                "Vehicle, driver, appointment timing and viewing-service cost",
+                "Follow-up and exception status"
+              ]
+            }
+          }
+        ]
       },
       {
         "id": "opening-evidence",
-        "title": "The records behind the operating view.",
-        "body": "Recognized that inconsistent categories and unclear stakeholder questions were the problem before dashboard presentation.",
-        "detail": "Property records, Stakeholder questions, Decision views bring this part of Business Analyst into focus. Select an element to inspect its role and the information it represents.",
+        "title": "Connect eight operating workflows.",
+        "body": "The work covered 20+ sale, rental and lease workflow variants. Eight connected groups explain what that meant: property master data; lifecycle states; commission and revenue-support information; cost and maintenance obligations; demand and pricing support; risk and exceptions; customer-viewing operations; and management/finance reporting.",
+        "detail": "The shared lifecycle was owner/builder/seller → listing → buyer/tenant prospect → viewing → transaction or no transaction → payment/commission status → lease support or sale registration/closure. My responsibility was the information, business rules, reporting and handoffs across that lifecycle; final commercial, accounting and legal authority remained with the authorized teams.",
         "motion": "inspect",
         "scene": {
           "asset": "/worlds/gias-city.png",
           "aspect": 1.7768331562167907
         },
-        "objects": [
-          {
-            "name": "Property records",
-            "kind": "file",
-            "format": "Evidence / document",
-            "detail": "A shared property register organized location, type, lifecycle status, pricing and follow-up across 1,000+ records, five cities and more than 20 workflows.",
-            "fields": [
-              "Stakeholder questions",
-              "Decision views"
-            ],
-            "visual": "world",
-            "visualData": {
-              "type": "world",
-              "title": "Project world",
-              "content": []
-            }
-          },
-          {
-            "name": "Stakeholder questions",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Management, sales, brokers, builders and client-facing teams needed different answers from the same information. Their questions shaped definitions, filters and recurring views.",
-            "fields": [
-              "Property records",
-              "Decision views"
-            ],
-            "visual": "stakeholder-questions",
-            "visualData": {
-              "type": "comparison",
-              "title": "Different questions, shared records",
-              "content": [
-                "Management: inventory",
-                "Sales / brokers: availability",
-                "Clients: suitable properties"
-              ]
-            }
-          },
-          {
-            "name": "Decision views",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Excel and Tableau views turned prepared records into inventory, availability, trend and exception reporting for management review.",
-            "fields": [
-              "Property records",
-              "Stakeholder questions"
-            ],
-            "visual": "decision-dashboard",
-            "visualData": {
-              "type": "board",
-              "title": "Decision views",
-              "content": [
-                "Inventory",
-                "Availability",
-                "Pricing",
-                "Exceptions"
-              ]
-            }
-          }
-        ],
         "composition": {
           "id": "experience-opening-evidence",
           "layout": "hero"
-        }
+        },
+        "objects": [
+          {
+            "name": "Property and inventory master data",
+            "kind": "plan",
+            "format": "Operating-information view",
+            "detail": "Cleaned, normalized and reconciled fragmented agent, finance and operating inputs into a multi-city hierarchy with stable property, unit and land identifiers.",
+            "fields": [
+              "Sale, rental and lease lifecycle",
+              "Commission and revenue-support information"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Property and inventory master data",
+              "content": [
+                "Clean and reconcile",
+                "Stable property/unit IDs"
+              ]
+            }
+          },
+          {
+            "name": "Sale, rental and lease lifecycle",
+            "kind": "plan",
+            "format": "Operating-information view",
+            "detail": "Maintained available, sold, rented, leased and unresolved/no-action states, with information supporting the relevant transaction, registration or established lease boundary.",
+            "fields": [
+              "Commission and revenue-support information",
+              "Property cost and maintenance obligations"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Sale, rental and lease lifecycle",
+              "content": [
+                "Available / sold / rented",
+                "Leased / unresolved"
+              ]
+            }
+          },
+          {
+            "name": "Commission and revenue-support information",
+            "kind": "plan",
+            "format": "Operating-information view",
+            "detail": "Structured property values, property-specific commission terms and cash/cheque payment or clearance states for reporting. Finance remained the accounting authority.",
+            "fields": [
+              "Property cost and maintenance obligations",
+              "Demand, market and pricing support"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Commission and revenue-support information",
+              "content": [
+                "Property-specific terms",
+                "Payment / cheque status"
+              ]
+            }
+          },
+          {
+            "name": "Property cost and maintenance obligations",
+            "kind": "plan",
+            "format": "Operating-information view",
+            "detail": "Attached obligations received from finance and operating teams to the correct property or unit so they were visible during buyer/tenant handoff and review.",
+            "fields": [
+              "Demand, market and pricing support",
+              "Risk and exception tracking"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Property cost and maintenance obligations",
+              "content": [
+                "Property-level obligations",
+                "Buyer / tenant handoff"
+              ]
+            }
+          },
+          {
+            "name": "Demand, market and pricing support",
+            "kind": "plan",
+            "format": "Operating-information view",
+            "detail": "Compared monthly location/building movement, sold versus unsold inventory, viewing activity and listing-price changes to support management review.",
+            "fields": [
+              "Risk and exception tracking",
+              "High-value customer viewing"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Demand, market and pricing support",
+              "content": [
+                "Monthly demand movement",
+                "Inventory / listing review"
+              ]
+            }
+          },
+          {
+            "name": "Risk and exception tracking",
+            "kind": "plan",
+            "format": "Operating-information view",
+            "detail": "Made long-unsold inventory, rental defaults, pending payments/cheque clearance, maintenance obligations, unresolved transactions and follow-up cases visible.",
+            "fields": [
+              "High-value customer viewing",
+              "Management and finance decision support"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Risk and exception tracking",
+              "content": [
+                "Defaults / pending cases",
+                "Unresolved follow-up"
+              ]
+            }
+          },
+          {
+            "name": "High-value customer viewing",
+            "kind": "plan",
+            "format": "Operating-information view",
+            "detail": "Tracked customer, agent, property/location, rented vehicle, driver, appointment timing and viewing-service costs, including visits that did not close.",
+            "fields": [
+              "Management and finance decision support",
+              "Property and inventory master data"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "High-value customer viewing",
+              "content": [
+                "Customer / agent / visit",
+                "Vehicle / driver / cost"
+              ]
+            }
+          },
+          {
+            "name": "Management and finance decision support",
+            "kind": "plan",
+            "format": "Operating-information view",
+            "detail": "Updated the Excel operating master and recurring Tableau/management views used by finance, operations, the CEO and other authorized decision-makers.",
+            "fields": [
+              "Property and inventory master data",
+              "Sale, rental and lease lifecycle"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Management and finance decision support",
+              "content": [
+                "Excel operating master",
+                "Tableau / decision views"
+              ]
+            }
+          }
+        ]
       },
       {
         "id": "chapter-2",
-        "title": "Answer different stakeholder questions.",
-        "body": "Management, sales and brokers, builders, and client-facing teams needed different views of the work. I translated their questions into business rules, status definitions, KPIs and filters.",
-        "detail": "The reports were revised through feedback rather than treated as finished because a dashboard looked organized. Inventory, pricing, availability, market trends and exceptions informed review priorities and follow-up decisions.",
+        "title": "Make decision questions and exceptions visible.",
+        "body": "I structured and reported the information management needed to review inventory, demand, commercial terms and unresolved cases. The questions included which properties were sold, unsold, rented, leased or unresolved; where demand was rising or declining; and which locations, buildings or ownership arrangements needed follow-up.",
+        "detail": "The exception view covered long-unsold inventory, rental defaults, pending or uncleared cash/cheque transactions, maintenance obligations and unresolved cases. For high-value property visits, I also tracked the customer, agent, property/location, rented vehicle, driver, timing and service cost. Visits that did not close still incurred operating costs. These records supported decisions; they did not give me final pricing, finance or lending authority.",
         "motion": "experience-2",
         "scene": {
           "asset": "/worlds/gias-scenes.png",
@@ -301,136 +371,94 @@
           ],
           "aspect": 1.7768331562167907
         },
-        "insights": [
-          {
-            "label": "Stakeholder-specific information design",
-            "body": "Created different filtered views for management, broker/sales, builder and client-facing needs."
-          },
-          {
-            "label": "Requirements elicitation through feedback",
-            "body": "Used management direction to refine filters, information structure and reporting priorities."
-          }
-        ],
-        "objects": [
-          {
-            "name": "Management review",
-            "kind": "check",
-            "format": "Project component",
-            "detail": "Created different filtered views for management, broker/sales, builder and client-facing needs.",
-            "fields": [
-              "Sales & broker views",
-              "Builder requirements"
-            ],
-            "visual": "management",
-            "visualData": {
-              "type": "table",
-              "title": "Management view",
-              "content": [
-                [
-                  "Inventory",
-                  "Exceptions",
-                  "Actions"
-                ]
-              ],
-              "headers": [
-                "Review",
-                "Priority",
-                "Follow-up"
-              ]
-            }
-          },
-          {
-            "name": "Sales & broker views",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Created different filtered views for management, broker/sales, builder and client-facing needs.",
-            "fields": [
-              "Management review",
-              "Builder requirements"
-            ],
-            "visual": "sales",
-            "visualData": {
-              "type": "table",
-              "title": "Sales / broker view",
-              "content": [
-                [
-                  "Property options",
-                  "Comparisons",
-                  "Follow-up"
-                ]
-              ],
-              "headers": [
-                "Availability",
-                "Pricing",
-                "Status"
-              ]
-            }
-          },
-          {
-            "name": "Builder requirements",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Created different filtered views for management, broker/sales, builder and client-facing needs.",
-            "fields": [
-              "Management review",
-              "Sales & broker views"
-            ],
-            "visual": "builder",
-            "visualData": {
-              "type": "table",
-              "title": "Builder view",
-              "content": [
-                [
-                  "Scope",
-                  "Suitability",
-                  "Status"
-                ]
-              ],
-              "headers": [
-                "Requirements",
-                "Property",
-                "Review"
-              ]
-            }
-          },
-          {
-            "name": "Client-facing view",
-            "visual": "client",
-            "detail": "Client requirements and follow-up needs inform filtered property views, while the shared register preserves consistent underlying definitions.",
-            "kind": "record",
-            "format": "Section-specific artifact",
-            "fields": [
-              "Answer different stakeholder questions.",
-              "Business Analyst"
-            ],
-            "visualData": {
-              "type": "table",
-              "title": "Client-facing view",
-              "content": [
-                [
-                  "Requirements",
-                  "Filtered views",
-                  "Follow-up"
-                ]
-              ],
-              "headers": [
-                "Need",
-                "Options",
-                "Next step"
-              ]
-            }
-          }
-        ],
         "composition": {
           "id": "experience-chapter-2",
           "layout": "audience"
-        }
+        },
+        "objects": [
+          {
+            "name": "Inventory and demand questions",
+            "kind": "record",
+            "format": "Operating-information view",
+            "detail": "I organized the information used by management to compare availability, demand movement and inventory requiring attention.",
+            "fields": [
+              "Payment and maintenance exceptions",
+              "Commercial review questions"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Inventory and demand questions",
+              "content": [
+                "Which units/properties are sold, unsold, rented, leased or unresolved?",
+                "Which long-unsold properties need attention?",
+                "Which locations/buildings show month-over-month growth or decline?",
+                "Which buildings have rising demand or scarce inventory?"
+              ]
+            }
+          },
+          {
+            "name": "Payment and maintenance exceptions",
+            "kind": "record",
+            "format": "Operating-information view",
+            "detail": "I tracked unresolved payment, clearance, rental-default, maintenance and follow-up states. Finance and operating teams retained decision and action authority.",
+            "fields": [
+              "Inventory and demand questions",
+              "Viewing-service operations"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Payment and maintenance exceptions",
+              "content": [
+                "Which tenants/rental cases have payment defaults?",
+                "Which cash/cheque transactions remain pending or uncleared?",
+                "Which maintenance obligations transfer with a property or lease?",
+                "Which properties, ownership structures or service cases need follow-up?"
+              ]
+            }
+          },
+          {
+            "name": "Viewing-service operations",
+            "kind": "record",
+            "format": "Operating-information view",
+            "detail": "High-value visits connected the customer, agent, property/location, rented vehicle, driver and appointment time. Vehicle, driver, fuel/service and scheduling costs could remain even when a visit did not close.",
+            "fields": [
+              "Payment and maintenance exceptions",
+              "Commercial review questions"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Viewing-service operations",
+              "content": [
+                "What viewing-service costs were incurred when a high-value visit did not close?",
+                "Customer → agent → property/location → rented vehicle → driver → appointment timing → service cost"
+              ]
+            }
+          },
+          {
+            "name": "Commercial review questions",
+            "kind": "record",
+            "format": "Operating-information view",
+            "detail": "I structured and reported the evidence used by authorized decision-makers; I did not set final property prices, commission policy or accounting treatment.",
+            "fields": [
+              "Inventory and demand questions",
+              "Payment and maintenance exceptions"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Commercial review questions",
+              "content": [
+                "Where should management review price, listing or commission strategy?",
+                "What transaction/commission inputs are associated with sold or rented units?"
+              ]
+            }
+          }
+        ]
       },
       {
         "id": "chapter-3",
-        "title": "Build recurring reporting.",
-        "body": "I built more than ten recurring Excel and Tableau reporting assets using lookups, pivot tables, charts, filters and KPI views. The prepared data layer supported repeatable summaries and stakeholder-specific slices.",
-        "detail": "Remote review during the COVID-era work period made clear communication and revision important. I maintained the reporting workflow, responded to questions and changed views when the first version did not answer the actual business need.",
+        "title": "Connect field information to management decisions.",
+        "body": "Field agents, sales, finance and operating teams supplied information that I cleaned and reconciled into the Excel master. Tableau views and management extracts then presented consistent states, KPIs, exceptions and follow-up information to finance, operations and leadership.",
+        "detail": "I worked across agents, customer-facing teams, owners, builders, brokers, finance, the operations manager and CEO/leadership. Their feedback informed reporting requirements, filters and business rules. Management and finance made the final commercial and financial decisions. External bank or loan connections are company context only; I did not make lending decisions.",
         "motion": "experience-3",
         "scene": {
           "asset": "/worlds/gias-scenes.png",
@@ -446,109 +474,83 @@
           ],
           "aspect": 1.7768331562167907
         },
-        "metrics": [
-          {
-            "value": "10+",
-            "label": "recurring Excel / Tableau reporting assets"
-          }
-        ],
-        "insights": [
-          {
-            "label": "Operational aggregation and visual summaries",
-            "body": "Used pivot tables, charts and plots to turn individual records into reviewable business summaries."
-          },
-          {
-            "label": "Tableau reporting from a prepared data layer",
-            "body": "Built Tableau dashboards on top of cleaned Excel/property information and connected the reporting layer to the underlying business categories."
-          }
-        ],
-        "objects": [
-          {
-            "name": "Excel workbook",
-            "kind": "table",
-            "format": "Structured records",
-            "detail": "Built Tableau dashboards on top of cleaned Excel/property information and connected the reporting layer to the underlying business categories.",
-            "fields": [
-              "Tableau views",
-              "Review feedback"
-            ],
-            "visual": "excel-report",
-            "visualData": {
-              "type": "table",
-              "title": "Recurring Excel reporting",
-              "content": [
-                [
-                  "Lookups",
-                  "Link related fields"
-                ],
-                [
-                  "Pivot tables",
-                  "Operational aggregation"
-                ],
-                [
-                  "Charts / filters",
-                  "Management review"
-                ]
-              ],
-              "headers": [
-                "Method",
-                "Purpose"
-              ]
-            }
-          },
-          {
-            "name": "Tableau views",
-            "kind": "table",
-            "format": "Structured records",
-            "detail": "Built Tableau dashboards on top of cleaned Excel/property information and connected the reporting layer to the underlying business categories.",
-            "fields": [
-              "Excel workbook",
-              "Review feedback"
-            ],
-            "visual": "tableau-report",
-            "visualData": {
-              "type": "board",
-              "title": "Stakeholder reporting view",
-              "content": [
-                "Location",
-                "Property type",
-                "Lifecycle status",
-                "Availability",
-                "Follow-up"
-              ]
-            }
-          },
-          {
-            "name": "Review feedback",
-            "kind": "check",
-            "format": "Project component",
-            "detail": "Used pivot tables, charts and plots to turn individual records into reviewable business summaries.",
-            "fields": [
-              "Excel workbook",
-              "Tableau views"
-            ],
-            "visual": "feedback",
-            "visualData": {
-              "type": "notes",
-              "title": "Management feedback loop",
-              "content": [
-                "Review questions",
-                "Revised filters",
-                "Corrected definitions"
-              ]
-            }
-          }
-        ],
         "composition": {
           "id": "experience-chapter-3",
           "layout": "reporting"
-        }
+        },
+        "objects": [
+          {
+            "name": "Stakeholder handoffs",
+            "kind": "network",
+            "format": "Operating-information view",
+            "detail": "Field/finance/sales inputs → cleaning and reconciliation → Excel operating master → Tableau/management views → finance/operations/CEO decisions → operational follow-up.",
+            "fields": [
+              "Excel operating master",
+              "Tableau and management views"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Stakeholder handoffs",
+              "content": [
+                "Field agents / sales agents",
+                "Customer-facing teams",
+                "Buyers, tenants and prospects",
+                "Property owners and individual clients",
+                "Builders and project inventory owners",
+                "Brokers/intermediaries",
+                "Finance team",
+                "Operations manager",
+                "CEO/leadership"
+              ]
+            }
+          },
+          {
+            "name": "Excel operating master",
+            "kind": "table",
+            "format": "Operating-information view",
+            "detail": "I maintained identifiers, normalized and reconciled inputs, property states, commercial fields and exception information so the operating view could be updated consistently.",
+            "fields": [
+              "Stakeholder handoffs",
+              "Tableau and management views"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Excel operating master",
+              "content": [
+                "Structured identifiers and reference tables",
+                "Lookup logic / VLOOKUP-style reference workflows",
+                "Filters and calculated fields",
+                "Current states and follow-up exceptions"
+              ]
+            }
+          },
+          {
+            "name": "Tableau and management views",
+            "kind": "chart",
+            "format": "Operating-information view",
+            "detail": "Recurring reporting assets and management extracts exposed KPIs, inventory/demand movement, payment states and exceptions for authorized decision-makers.",
+            "fields": [
+              "Stakeholder handoffs",
+              "Excel operating master"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Tableau and management views",
+              "content": [
+                "Finance and operations review",
+                "CEO/leadership visibility",
+                "Presentation/report extracts",
+                "Feedback into requirements and follow-up"
+              ]
+            }
+          }
+        ]
       },
       {
         "id": "chapter-4",
-        "title": "Show the result with its evidence basis.",
-        "body": "Management feedback indicated approximately 30% improvement in internal tracking and management-review effort, alongside clearer shared definitions, validation and follow-up ownership.",
-        "detail": "That figure is feedback-based; original employer workbooks and an independent outcome audit were not supplied. The LinkedIn recommendation supports the Business Analyst work, analytical skills, stakeholder communication, requirements understanding and cross-functional collaboration.",
+        "title": "Show the scale and qualify the result.",
+        "body": "Across three years of professional Business Analyst experience, the work covered 1,000+ property and unit records, 5+ cities, 20+ sale, rental and lease workflow variants, and 10+ recurring Excel and Tableau reporting assets.",
+        "detail": "Management feedback indicated approximately 30% improvement in internal tracking and management-review efficiency. This is a feedback-based result, not an independent outcome audit. The LinkedIn manager recommendation supports analytical skills, stakeholder communication, proactive problem-solving, business-requirement understanding, consistent quality and cross-functional collaboration; it does not independently validate every field or metric described here.",
         "motion": "experience-4",
         "scene": {
           "asset": "/worlds/gias-scenes.png",
@@ -564,92 +566,106 @@
           ],
           "aspect": 1.7768331562167907
         },
-        "insights": [
+        "composition": {
+          "id": "experience-chapter-4",
+          "layout": "review"
+        },
+        "metrics": [
           {
-            "label": "Iterative delivery and correction",
-            "body": "Revised and rebuilt reports when an initially organized view did not answer the right business question."
+            "value": "3 years",
+            "label": "professional Business Analyst experience"
           },
           {
-            "label": "Business decision support",
-            "body": "Connected data preparation and reporting to management visibility, property availability and follow-up decisions."
+            "value": "1,000+",
+            "label": "property and unit records"
+          },
+          {
+            "value": "5+",
+            "label": "cities"
+          },
+          {
+            "value": "20+",
+            "label": "sale, rental and lease workflow variants"
+          },
+          {
+            "value": "10+",
+            "label": "recurring Excel and Tableau reporting assets"
+          },
+          {
+            "value": "Approximately 30%",
+            "label": "internal tracking and management-review efficiency improvement — management feedback"
           }
         ],
         "objects": [
           {
-            "name": "Workflow comparison",
-            "kind": "chart",
-            "format": "Project component",
-            "detail": "Reported internal improvement; not an independently audited financial result.",
+            "name": "Management-feedback outcome",
+            "kind": "check",
+            "format": "Operating-information view",
+            "detail": "Approximately 30% improvement in internal tracking and management-review efficiency was reported through management feedback. It is not an independently audited financial or causal result.",
             "fields": [
-              "Management feedback",
-              "Evidence boundary"
+              "Recommendation evidence",
+              "Authority and evidence limits"
             ],
-            "visual": "outcome",
-            "visualData": {
-              "type": "metrics",
-              "title": "Reported workflow outcome",
-              "content": [
-                [
-                  "~30%",
-                  "Internal review improvement"
-                ],
-                [
-                  "10+",
-                  "Reporting assets"
-                ]
-              ],
-              "caption": "Experience account; not an independent audit"
-            }
-          },
-          {
-            "name": "Management feedback",
-            "kind": "plan",
-            "format": "Project component",
-            "detail": "Connected data preparation and reporting to management visibility, property availability and follow-up decisions.",
-            "fields": [
-              "Workflow comparison",
-              "Evidence boundary"
-            ],
-            "visual": "feedback",
             "visualData": {
               "type": "notes",
-              "title": "Management feedback loop",
+              "title": "Management-feedback outcome",
               "content": [
-                "Review questions",
-                "Revised filters",
-                "Corrected definitions"
+                "Management-feedback basis",
+                "No quantified cost savings or conversion claim",
+                "No independent outcome audit"
               ]
             }
           },
           {
-            "name": "Evidence boundary",
-            "kind": "check",
-            "format": "Project component",
-            "detail": "Connected data preparation and reporting to management visibility, property availability and follow-up decisions.",
+            "name": "Recommendation evidence",
+            "kind": "record",
+            "format": "Operating-information view",
+            "detail": "The manager recommendation supports these professional themes, not independent validation of every field or metric.",
             "fields": [
-              "Workflow comparison",
-              "Management feedback"
+              "Management-feedback outcome",
+              "Authority and evidence limits"
             ],
-            "visual": "recognition",
             "visualData": {
-              "type": "sprite",
-              "title": "Recommendation",
-              "content": [],
-              "sheet": "domain",
-              "frame": 14
+              "type": "notes",
+              "title": "Recommendation evidence",
+              "content": [
+                "Strong analytical skills",
+                "Stakeholder communication",
+                "Proactive problem-solving",
+                "Understanding business requirements",
+                "Consistent quality work",
+                "Cross-functional collaboration"
+              ]
+            }
+          },
+          {
+            "name": "Authority and evidence limits",
+            "kind": "check",
+            "format": "Operating-information view",
+            "detail": "Owned the information and analysis layer; supported management and finance decisions. Final pricing, accounting, commission policy, commercial and legal authority remained with authorized teams. Approximately 30% improvement is based on management feedback, not an independent audit. No confidential records or reconstructed sample values are published.",
+            "fields": [
+              "Recommendation evidence",
+              "Management-feedback outcome"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Authority and evidence limits",
+              "content": [
+                "No final property pricing or commission-policy ownership",
+                "No accounting books, close, statutory reporting or company cash-flow management",
+                "No investment, lending, credit or legal registration decisions",
+                "No corporate procurement, supply-chain or ERP ownership",
+                "No confidential company data or reconstructed sample values"
+              ]
             }
           }
-        ],
-        "composition": {
-          "id": "experience-chapter-4",
-          "layout": "review"
-        }
+        ]
       },
       {
         "id": "skills-tools",
-        "title": "The skills behind the work.",
-        "body": "Business analysis connects the question, the records and the decision. These are the methods I applied across the GIAS reporting workflow.",
-        "detail": "Professional tools and methods described in my GIAS experience. The original employer workbooks are not public.",
+        "title": "Capabilities, tools and evidence.",
+        "body": "The Business Analyst work was defining entities, identifiers, business states, commercial rules, KPIs, exceptions, data grain, reporting needs and cross-functional handoffs. Excel and Tableau were tools used to maintain and communicate that operating view.",
+        "detail": "The capabilities below are specific to my GIAS role. Tools and methods are shown separately. Original employer records are not public, and no confidential company data or reconstructed sample values are published. Final pricing, accounting, commission policy, commercial, lending and legal decisions remained with management, finance and other authorized parties.",
         "motion": "The final scene opens a constellation of skills and real tool emblems.",
         "scene": {
           "asset": "/worlds/gias-finale.png",
@@ -659,128 +675,217 @@
     ],
     "links": [
       {
+        "label": "Company website",
+        "url": "https://gias.in/"
+      },
+      {
+        "label": "Company LinkedIn",
+        "url": "https://www.linkedin.com/company/global-infrastructure-advisory-service/"
+      },
+      {
         "label": "LinkedIn recommendation",
-        "url": "https://www.linkedin.com/in/praveen-rathee-8b028030b/details/recommendations/?detailScreenTabIndex=0"
+        "url": "https://www.linkedin.com/in/praveen-rathee-8b028030b/details/recommendations/"
       }
     ],
     "skills": [
       {
-        "label": "Business-process diagnosis",
-        "description": "Recognized that inconsistent categories and unclear stakeholder questions were the problem before dashboard presentation.",
-        "evidenceId": "GIAS-S01"
+        "label": "Business Analysis",
+        "description": "Defined the operating-information layer connecting property inventory, transactions, commercial states, demand and management decisions.",
+        "evidenceId": "GIAS-R1-01"
       },
       {
-        "label": "Heterogeneous operational-record structuring",
-        "description": "Organized property information across rental, sale, lease, office, commercial and residential uses.",
-        "evidenceId": "GIAS-S02"
+        "label": "Business Process Analysis",
+        "description": "Analyzed the listing-to-viewing-to-transaction or non-conversion lifecycle and its reporting handoffs.",
+        "evidenceId": "GIAS-R1-02"
       },
       {
-        "label": "Multi-location and status segmentation",
-        "description": "Separated city, category, availability, pricing and status dimensions so the same records could answer different operating questions.",
-        "evidenceId": "GIAS-S03"
+        "label": "Requirements Gathering",
+        "description": "Translated feedback from finance, operations, agents and leadership into fields, filters, reporting needs and exceptions.",
+        "evidenceId": "GIAS-R1-03"
       },
       {
-        "label": "Spreadsheet lookup and linked-field logic",
-        "description": "Used Excel lookup logic and VLOOKUP to retrieve related information across tracking structures.",
-        "evidenceId": "GIAS-S04"
+        "label": "Business Rules",
+        "description": "Structured property lifecycle statuses, property-specific commission terms, payment/cheque-clearance states and maintenance obligations.",
+        "evidenceId": "GIAS-R1-04"
       },
       {
-        "label": "Operational aggregation and visual summaries",
-        "description": "Used pivot tables, charts and plots to turn individual records into reviewable business summaries.",
-        "evidenceId": "GIAS-S05"
+        "label": "Process Mapping",
+        "description": "Connected eight workflow groups across the sale, rental and lease lifecycle.",
+        "evidenceId": "GIAS-R1-05"
       },
       {
-        "label": "Maintainable tracking workflow",
-        "description": "Built cleaned tracking structures that could accept and update new property records rather than remain a one-time report.",
-        "evidenceId": "GIAS-S06"
+        "label": "Stakeholder Management",
+        "description": "Maintained reporting communication and requirements across agents, owners/builders, brokers, finance, operations and leadership.",
+        "evidenceId": "GIAS-R1-06"
       },
       {
-        "label": "Tableau reporting from a prepared data layer",
-        "description": "Built Tableau dashboards on top of cleaned Excel/property information and connected the reporting layer to the underlying business categories.",
-        "evidenceId": "GIAS-S07"
+        "label": "Cross-functional Coordination",
+        "description": "Supported handoffs between field inputs, the Excel master, management views and operational follow-up.",
+        "evidenceId": "GIAS-R1-07"
       },
       {
-        "label": "Stakeholder-specific information design",
-        "description": "Created different filtered views for management, broker/sales, builder and client-facing needs.",
-        "evidenceId": "GIAS-S08"
+        "label": "Commercial Operations",
+        "description": "Structured transaction values, commercial terms and payment information for review without owning final commercial decisions.",
+        "evidenceId": "GIAS-R1-08"
       },
       {
-        "label": "Requirements elicitation through feedback",
-        "description": "Used management direction to refine filters, information structure and reporting priorities.",
-        "evidenceId": "GIAS-S09"
+        "label": "Property Operations",
+        "description": "Organized available, sold, rented, leased and unresolved property/unit/land records and associated obligations.",
+        "evidenceId": "GIAS-R1-09"
       },
       {
-        "label": "Iterative delivery and correction",
-        "description": "Revised and rebuilt reports when an initially organized view did not answer the right business question.",
-        "evidenceId": "GIAS-S10"
+        "label": "Inventory Analysis",
+        "description": "Compared sold versus unsold inventory and identified long-unsold properties requiring management attention.",
+        "evidenceId": "GIAS-R1-10"
       },
       {
-        "label": "Remote analytical communication",
-        "description": "Delivered dashboard versions and handled review loops remotely during the described COVID-era work period.",
-        "evidenceId": "GIAS-S11"
+        "label": "Demand Analysis",
+        "description": "Compared monthly location/building movement and customer-viewing activity to describe demand changes.",
+        "evidenceId": "GIAS-R1-11"
       },
       {
-        "label": "Lifecycle and follow-up visibility",
-        "description": "Made rental, lease, buy, sell and relationship/follow-up stages easier to monitor in the operating workflow.",
-        "evidenceId": "GIAS-S12"
+        "label": "Pricing Analysis Support",
+        "description": "Reported asking/listing-price changes, demand and scarce inventory for management pricing review; management set final prices.",
+        "evidenceId": "GIAS-R1-12"
       },
       {
-        "label": "Business decision support",
-        "description": "Connected data preparation and reporting to management visibility, property availability and follow-up decisions.",
-        "evidenceId": "GIAS-S13"
+        "label": "Commission Analysis",
+        "description": "Structured property-specific commission percentages or terms and expected commission/revenue inputs; finance retained accounting authority.",
+        "evidenceId": "GIAS-R1-13"
       },
       {
-        "label": "Operational domain understanding",
-        "description": "Understood the different information needs created by heterogeneous property inventory, partner-supplied access and client-facing work. Company activities are context; they are not all claimed as personal execution.",
-        "evidenceId": "GIAS-S14"
+        "label": "Management Reporting",
+        "description": "Maintained recurring Excel/Tableau reporting assets and extracts used by finance, operations and leadership.",
+        "evidenceId": "GIAS-R1-14"
+      },
+      {
+        "label": "KPI Reporting",
+        "description": "Defined and reported decision questions around property states, monthly demand movement, payment status and exceptions.",
+        "evidenceId": "GIAS-R1-15"
+      },
+      {
+        "label": "Decision Support",
+        "description": "Supported management and finance decisions through structured evidence; did not make executive pricing or financial decisions.",
+        "evidenceId": "GIAS-R1-16"
+      },
+      {
+        "label": "Exception Management",
+        "description": "Tracked long-unsold inventory, rental defaults, pending cheque clearance, maintenance obligations and unresolved follow-up cases.",
+        "evidenceId": "GIAS-R1-17"
+      },
+      {
+        "label": "Data Analysis",
+        "description": "Cleaned, filtered, normalized, reconciled and analyzed fragmented agent, sales, finance and operating inputs.",
+        "evidenceId": "GIAS-R1-18"
+      },
+      {
+        "label": "Data Modeling",
+        "description": "Defined entities, stable identifiers and appropriate property, unit, land, event and payment-record grain with data-quality checks.",
+        "evidenceId": "GIAS-R1-19"
+      },
+      {
+        "label": "Logistics Coordination",
+        "description": "Tracked high-value customer-viewing appointments by customer, agent, property/location, rented vehicle, driver, timing and service cost.",
+        "evidenceId": "GIAS-R1-20"
       }
     ],
     "tools": [
       {
         "icon": "microsoftexcel",
-        "name": "Excel",
-        "purpose": "Lookups, pivot tables and recurring reporting"
+        "name": "Microsoft Excel",
+        "purpose": "Operating master, reconciled records, lookup logic, filters, calculations and management extracts."
       },
       {
         "icon": "tableau",
         "name": "Tableau",
-        "purpose": "Stakeholder-specific visual reporting"
+        "purpose": "Management views of inventory, commercial states, demand, KPIs and follow-up exceptions based on the updated Excel master."
       }
     ],
-    "skillNote": "Professional tools and methods described in my GIAS experience. The original employer workbooks are not public.",
+    "skillNote": "The capabilities below are specific to my GIAS role. Tools and methods are shown separately. Original employer records are not public, and no confidential company data or reconstructed sample values are published. Final pricing, accounting, commission policy, commercial, lending and legal decisions remained with management, finance and other authorized parties.",
     "asset": "/worlds/gias-city.png",
     "sceneAtlas": "/worlds/gias-scenes.png",
     "linkedSkills": [
       "Business Analysis",
-      "Requirements Analysis",
-      "Requirements Gathering",
       "Business Process Analysis",
+      "Requirements Gathering",
+      "Business Rules",
       "Process Mapping",
-      "Operations Analysis",
-      "Operations Management",
-      "Continuous Improvement",
-      "Inventory Analysis",
-      "Inventory Management",
-      "Demand Forecasting",
-      "Market Analysis",
-      "Data Quality",
-      "Data Validation",
-      "Master Data Management",
-      "Data Operations",
-      "Workflow Design",
-      "Workflow Analysis",
-      "Business Systems Analysis",
       "Stakeholder Management",
-      "Cross-Functional Collaboration",
-      "Decision Support",
-      "Scenario Analysis",
-      "Root Cause Analysis",
-      "Operational Risk Management",
+      "Cross-functional Coordination",
+      "Commercial Operations",
+      "Property Operations",
+      "Inventory Analysis",
+      "Demand Analysis",
+      "Pricing Analysis Support",
+      "Commission Analysis",
       "Management Reporting",
-      "Performance Reporting",
-      "Microsoft Excel"
+      "KPI Reporting",
+      "Decision Support",
+      "Exception Management",
+      "Data Analysis",
+      "Data Modeling",
+      "Logistics Coordination"
     ],
-    "skillBasis": "Skills associated with GIAS in the approved profile mapping."
+    "skillBasis": "GIAS professional experience reconstruction and authorized R1 correction; manager recommendation supports professional themes, not every technical field or metric.",
+    "employment": {
+      "employer": "Global Infrastructure & Advisory Services",
+      "displayName": "Global Infrastructure & Advisory Services (GIAS)",
+      "role": "Business Analyst",
+      "type": "Full-time",
+      "startDate": "2021-01",
+      "endDate": "2023-12",
+      "duration": "3 years",
+      "location": "Vadodara, Gujarat, India",
+      "workMode": "Hybrid"
+    },
+    "metadata": {
+      "title": "Business Analyst at GIAS — Praveen Rathee",
+      "description": "Three years as a Business Analyst at GIAS in Vadodara: property and transaction data, commission/payment states, demand, exceptions and Excel/Tableau management decision support."
+    },
+    "scopeMetrics": [
+      {
+        "value": "3 years",
+        "label": "professional Business Analyst experience"
+      },
+      {
+        "value": "1,000+",
+        "label": "property and unit records"
+      },
+      {
+        "value": "5+",
+        "label": "cities"
+      },
+      {
+        "value": "20+",
+        "label": "sale, rental and lease workflow variants"
+      },
+      {
+        "value": "10+",
+        "label": "recurring Excel and Tableau reporting assets"
+      },
+      {
+        "value": "Approximately 30%",
+        "label": "internal tracking and management-review efficiency improvement — management feedback"
+      }
+    ],
+    "methods": [
+      {
+        "name": "Lookup logic / VLOOKUP-style reference workflows",
+        "purpose": "Retrieve related property and commercial information consistently using reference keys."
+      },
+      {
+        "name": "Filters and calculated fields",
+        "purpose": "Prepare stakeholder-specific views and reporting calculations."
+      },
+      {
+        "name": "Structured identifiers and reference tables",
+        "purpose": "Connect cities, buildings, properties, units or land to the correct operating records."
+      },
+      {
+        "name": "Presentation/report extracts",
+        "purpose": "Communicate recurring operating views and exceptions to authorized decision-makers."
+      }
+    ]
   },
   {
     "id": "03-evidence-lane-plugin",

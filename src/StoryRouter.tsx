@@ -1,3 +1,4 @@
+import {applyPageMetadata} from './pageMetadata';
 import {useEffect,useState} from 'react';
 import projectData from './data/projects.json';
 import type {Project} from './types';
@@ -14,7 +15,7 @@ export default function StoryRouter(){
  useEffect(()=>{const media=matchMedia('(prefers-reduced-motion: reduce)');const changed=()=>setReduced(media.matches);media.addEventListener('change',changed);return()=>media.removeEventListener('change',changed);},[]);
  const toggle=()=>setPaused(value=>{try{localStorage.setItem('portfolio:motion:v1',!value?'paused':'running');}catch{/* optional preference */}return !value;});
  const shared={paused,reduced,onToggleMotion:toggle};const category=worldCategories.find(c=>path===`/worlds/${c.slug}`);const project=projects.find(p=>path===(p.slug==='experience'?'/experience':`/projects/${p.slug}`));
- useEffect(()=>{document.title=category?`${category.name} World — Praveen Rathee`:project?`${project.shortTitle} — Praveen Rathee`:'Ai PORTFOLIO — Praveen Rathee';},[category,project]);
+ useEffect(()=>{applyPageMetadata(project,category?`${category.name} World — Praveen Rathee`:project?`${project.shortTitle} — Praveen Rathee`:'Ai PORTFOLIO — Praveen Rathee');},[category,project]);
  if(path==='/')return <HomeGateway projects={projects} {...shared}/>;
  if(category?.projectIds.length===1)return <SingleWorldRedirect to={worldDestination(category,projects)}/>;
  if(category)return <CategoryWorld category={category} projects={projects} {...shared}/>;

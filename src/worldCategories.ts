@@ -1,5 +1,5 @@
 export const worldCategories=[
- {slug:'experience',name:'Experience',description:'Business analysis, property operations and recurring management reporting.',projectIds:['02-business-analyst'],asset:'/worlds/gias-city.png',color:'#ebc195',point:[.54,.55]},
+ {slug:'experience',name:'Experience',description:'Business analysis for multi-city property and commercial operations: structured records, lifecycle states, exceptions and management decision support.',projectIds:['02-business-analyst'],asset:'/worlds/gias-city.png',color:'#ebc195',point:[.54,.55]},
  {slug:'ai-workflows',name:'AI Workflows',description:'The Evidence Lane Plugin and its earlier desktop App: two distinct project generations.',projectIds:['03-evidence-lane-plugin','04-evidence-lane-app'],asset:'/worlds/home-plugin-violet.png',color:'#c9a9ff',point:[.71,.55]},
  {slug:'forecasting',name:'Forecasting',description:'Gold Nexus Alpha leads a family of three forecasting and analytical projects.',projectIds:['05-gold-nexus-alpha','06-gold-regression','07-gold-excel-tableau'],asset:'/worlds/home-gna-world.png',color:'#ebc577',point:[.81,.54]},
  {slug:'campaigns',name:'Campaigns',description:'Literacy campaign strategy and the interactive supporter-journey prototype.',projectIds:['08-chapters-for-change','09-book-fairies'],asset:'/worlds/book-fairies-world.png',color:'#e8bdd0',point:[.88,.53]},

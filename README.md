@@ -20,7 +20,7 @@ A portfolio of business analysis, forecasting, AI workflows and operational insi
 
 ## Experience
 
-[Business Analyst — Global Infrastructure & Advisory Services](https://ai-portfolio-kohl-beta.vercel.app/experience): property-record organization, stakeholder requirements and recurring Excel/Tableau reporting.
+[Business Analyst — Global Infrastructure & Advisory Services](https://ai-portfolio-kohl-beta.vercel.app/experience): structured multi-city property, transaction, commission, payment, maintenance and demand information into an Excel/Tableau operating view used by finance, operations and leadership for commercial decisions and follow-up.
 
 ## Using the site
 

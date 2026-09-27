@@ -4,6 +4,7 @@ import {Search,Boxes,ArrowRight,CheckCheck} from 'lucide-react';
 import type {Project} from './types';
 import iconCatalog from './data/toolIconCatalog.json';
 import {skillDefinitions} from './skillDefinitions';
+import {experienceSkillDefinitions} from './experienceSkillDefinitions';
 import './skillExplorer.css';
 type Entry={id:string;name:string;group:string;groups:string[];definition:string;usage:string;related:{label:string;body:string}[]};
 const canonical=(name:string)=>name.toLowerCase().replace(/\(programming language\)|\(software\)/g,'').replace(/[^a-z0-9]/g,'');
@@ -20,6 +21,11 @@ function matching(name:string,p:Project){const tokens=name.toLowerCase().replace
 function entriesFor(p:Project){const entries:Entry[]=[];const seen=new Set<string>();
  const add=(name:string,group:string,usage:string,definition?:string,related?:Entry['related'])=>{const id=canonical(name);if(seen.has(id)){const existing=entries.find(e=>e.id===id)!;if(!existing.groups.includes(group))existing.groups.push(group);if(existing.usage!==usage&&!existing.related.some(r=>r.body===usage))existing.related.push({label:group==='Dependencies'?'Role in the registered toolchain':'Associated implementation',body:usage});return;}seen.add(id);const kind=Object.values(terms).find(k=>k.pattern.test(name));entries.push({id,name,group,groups:[group],usage,definition:definition||skillDefinitions[id]||kind?.definition||'A specific capability or tool connected to the project’s implementation and review.',related:related||matching(name,p)});};
  for(const t of p.tools||[])add(t.name,'Tools',t.purpose);
+ if(p.slug==='experience'){
+  for(const s of p.skills||[])add(s.label,'Skills',s.description,experienceSkillDefinitions[canonical(s.label)],[]);
+  for(const method of p.methods||[])add(method.name,'Methods',method.purpose,'A practical method used to structure, maintain or communicate the operating information.',[]);
+  return entries;
+ }
  for(const name of p.linkedSkills||[]){const related=matching(name,p);add(name,'Skills',related.length?related[0].body:`This skill is associated with ${p.shortTitle} on the professional profile. The project story and implementation capabilities provide the context for that association.`,undefined,related);const entry=entries.find(e=>e.id===canonical(name))!;if(/^(python|typescript|javascript|react|next\.js|three\.js|pytorch|xgboost|scikit-learn|pandas|numpy|statsmodels|sqlite|sql|tableau|microsoft excel|html|cascading style|github|llamaindex)/i.test(name)&&!entry.groups.includes('Tools'))entry.groups.push('Tools');}
  for(const s of p.skills||[])add(s.label,'Implementation',s.description,s.label.startsWith('Earlier implementation:')?'A capability from an earlier reviewed implementation, retained here as development history.':undefined,[{label:'Applied in this project',body:s.description}]);
  for(const group of p.toolchainGroups||[])for(const tool of group.tools)add(tool.name,'Dependencies',tool.description,`Part of the ${group.name.toLowerCase()} toolchain. Catalogue presence describes scope; actual readiness is checked for the selected operation.`,[]);
@@ -27,7 +33,7 @@ function entriesFor(p:Project){const entries:Entry[]=[];const seen=new Set<strin
 }
 function logo(name:string){const key=canonical(name);const catalog=iconCatalog as Record<string,string>;return catalog[key]||null;}
 function Orb({name,large=false}:{name:string;large?:boolean}){const src=logo(name);return <span className={`explorer-orb ${large?'explorer-orb-large':''}`} aria-hidden="true">{src?<img src={src} alt="" width={large?42:25} height={large?42:25}/>:<IllustratedIcon name={name} size={large?55:36}/>}</span>;}
-export default function SkillExplorer({project}:{project:Project}){const entries=useMemo(()=>entriesFor(project),[project]);const [query,setQuery]=useState(''),[filter,setFilter]=useState('All'),[selected,setSelected]=useState(entries[0]?.id);const groups=['All','Skills','Tools','Implementation',...(project.toolchainGroups?.length?['Dependencies']:[])];const visible=entries.filter(e=>(filter==='All'||e.groups.includes(filter))&&`${e.name} ${e.usage}`.toLowerCase().includes(query.toLowerCase()));const chosen=visible.find(e=>e.id===selected)||visible[0];
+export default function SkillExplorer({project}:{project:Project}){const entries=useMemo(()=>entriesFor(project),[project]);const [query,setQuery]=useState(''),[filter,setFilter]=useState('All'),[selected,setSelected]=useState(entries[0]?.id);const groups=project.slug==='experience'?['All','Skills','Tools','Methods']:['All','Skills','Tools','Implementation',...(project.toolchainGroups?.length?['Dependencies']:[])];const visible=entries.filter(e=>(filter==='All'||e.groups.includes(filter))&&`${e.name} ${e.usage}`.toLowerCase().includes(query.toLowerCase()));const chosen=visible.find(e=>e.id===selected)||visible[0];
  return <section className={`skill-explorer explorer-${project.world}`} aria-label={`${project.shortTitle} skills and tools explorer`}>
  <div className="explorer-instruction"><Boxes size={19}/><p>Select a skill or tool to see what it is and how it connects to this project. Search or scroll the collection to explore more.</p></div>
  {project.scopeMetrics?<div className="explorer-scope">{project.scopeMetrics.map(m=><div key={m.label}><strong>{m.value}</strong><span>{m.label}</span></div>)}</div>:null}

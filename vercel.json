@@ -5,7 +5,7 @@
   "outputDirectory": "dist",
   "installCommand": "npm ci",
   "rewrites": [
-    { "source": "/experience", "destination": "/index.html" },
+    { "source": "/experience", "destination": "/experience/index.html" },
     { "source": "/worlds/:path*", "destination": "/index.html" },
     { "source": "/projects/:path*", "destination": "/index.html" }
   ]

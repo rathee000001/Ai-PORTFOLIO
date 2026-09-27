@@ -1,0 +1,22 @@
+export const experienceSkillDefinitions:Record<string,string>={
+ businessanalysis:'Defining a business problem, its information needs and the changes that support better decisions.',
+ businessprocessanalysis:'Examining how work moves through states, rules, responsibilities and handoffs.',
+ requirementsgathering:'Eliciting and clarifying what stakeholders need from information and reporting.',
+ businessrules:'Explicit conditions and definitions governing how records, statuses and calculations are interpreted.',
+ processmapping:'Representing the sequence of activities, decisions and handoffs in an operating workflow.',
+ stakeholdermanagement:'Maintaining clear expectations, communication and feedback with people involved in the work.',
+ crossfunctionalcoordination:'Connecting information and follow-up across teams with different responsibilities.',
+ commercialoperations:'The operating processes and information supporting transactions and commercial activity.',
+ propertyoperations:'The information and processes supporting property availability, transactions, servicing and follow-up.',
+ inventoryanalysis:'Examining availability, movement and unresolved inventory to support review and action.',
+ demandanalysis:'Comparing observed interest and activity across locations and periods.',
+ pricinganalysissupport:'Preparing pricing-related evidence for the people authorized to make pricing decisions.',
+ commissionanalysis:'Organizing and examining transaction-specific commission terms and reporting inputs.',
+ managementreporting:'Producing recurring information used by managers to understand operations and follow-up.',
+ kpireporting:'Defining and presenting measures tied to specific operating questions.',
+ decisionsupport:'Providing structured information and analysis to authorized decision-makers.',
+ exceptionmanagement:'Identifying and tracking unresolved, overdue or unusual cases that need attention.',
+ dataanalysis:'Cleaning, reconciling and examining records to answer business questions.',
+ datamodeling:'Defining entities, identifiers, relationships and record grain for usable information.',
+ logisticscoordination:'Aligning people, locations, transport, timing and service requirements for an activity.'
+};
