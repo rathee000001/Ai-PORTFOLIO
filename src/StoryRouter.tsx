@@ -6,10 +6,12 @@ import {CategoryWorld} from './Gateway';
 import {worldCategories,worldDestination} from './worldCategories';
 import ExperienceStory,{SingleWorldRedirect} from './ExperienceStory';
 import ProjectStory from './ProjectStory';
+import {useWorldTravel} from './worldTravel';
 const projects=projectData as Project[];
 export default function StoryRouter(){
  const [path,setPath]=useState(()=>location.pathname),[reduced,setReduced]=useState(()=>matchMedia('(prefers-reduced-motion: reduce)').matches),[paused,setPaused]=useState(()=>{try{return localStorage.getItem('portfolio:motion:v1')==='paused';}catch{return false;}});
- useEffect(()=>{const pop=()=>setPath(location.pathname);window.addEventListener('popstate',pop);const media=matchMedia('(prefers-reduced-motion: reduce)');const changed=()=>setReduced(media.matches);media.addEventListener('change',changed);return()=>{window.removeEventListener('popstate',pop);media.removeEventListener('change',changed);};},[]);
+ useWorldTravel(path,setPath,paused||reduced);
+ useEffect(()=>{const media=matchMedia('(prefers-reduced-motion: reduce)');const changed=()=>setReduced(media.matches);media.addEventListener('change',changed);return()=>media.removeEventListener('change',changed);},[]);
  const toggle=()=>setPaused(value=>{try{localStorage.setItem('portfolio:motion:v1',!value?'paused':'running');}catch{/* optional preference */}return !value;});
  const shared={paused,reduced,onToggleMotion:toggle};const category=worldCategories.find(c=>path===`/worlds/${c.slug}`);const project=projects.find(p=>path===(p.slug==='experience'?'/experience':`/projects/${p.slug}`));
  useEffect(()=>{document.title=category?`${category.name} World — Praveen Rathee`:project?`${project.shortTitle} — Praveen Rathee`:'Ai PORTFOLIO — Praveen Rathee';},[category,project]);
@@ -28,3 +30,5 @@ import './mobileNavigationFix.css';
 
 import './readabilityCorrections.css';
 import './frostedStoryLayout.css';
+import './homeMobileContainment.css';
+import './worldTravel.css';

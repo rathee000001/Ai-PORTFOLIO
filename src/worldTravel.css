@@ -1,0 +1,5 @@
+html[data-world-travel] {overflow-x:clip}
+html[data-world-travel] .entry-scene,html[data-world-travel] .category-setting,html[data-world-travel] .scene-world{will-change:transform,opacity}
+.workbench-readout .workbench-return{display:block;width:auto;margin:0 0 16px auto;padding:8px 12px;border:1px solid #e0e9fa66;border-radius:18px;background:#09151bd9;color:#fff;font:inherit;font-size:12px;cursor:pointer}
+.workbench-readout .workbench-return:focus-visible{outline:2px solid var(--case-accent,#eacda1);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){html[data-world-travel] .entry-scene,html[data-world-travel] .category-setting,html[data-world-travel] .scene-world{will-change:auto}}
