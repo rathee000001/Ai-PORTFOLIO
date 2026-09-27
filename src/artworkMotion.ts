@@ -246,6 +246,6 @@ export function originalMotionProfile(project:string,chapter:string):keyof typeo
  if(project==='evidence-lane-plugin'&&chapter==='chapter-1')return 'pluginIntention';
  if(project==='evidence-lane-plugin'&&(chapter==='chapter-0'||chapter==='opening-evidence'))return 'pluginOpening';
  if(project!=='experience')return undefined;
- const profiles:Record<string,keyof typeof artworkScenes>={'chapter-0':'experienceCity','opening-evidence':'experienceCity','chapter-1':'experienceRecords','chapter-2':'experienceStakeholders','chapter-3':'experienceReporting','chapter-4':'experienceOutcome','skills-tools':'experienceFinale'};
+ const profiles:Record<string,keyof typeof artworkScenes>={'workflow-commercial-review':'experienceRecords','workflow-service':'experienceReporting','chapter-0':'experienceCity','opening-evidence':'experienceCity','chapter-1':'experienceRecords','chapter-2':'experienceStakeholders','chapter-3':'experienceReporting','chapter-4':'experienceOutcome','skills-tools':'experienceFinale'};
  return profiles[chapter];
 }

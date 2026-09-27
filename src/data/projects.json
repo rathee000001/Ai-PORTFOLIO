@@ -192,8 +192,8 @@
       },
       {
         "id": "opening-evidence",
-        "title": "Connect eight operating workflows.",
-        "body": "The work covered 20+ sale, rental and lease workflow variants. Eight connected groups explain what that meant: property master data; lifecycle states; commission and revenue-support information; cost and maintenance obligations; demand and pricing support; risk and exceptions; customer-viewing operations; and management/finance reporting.",
+        "title": "Connect property, lifecycle and commission information.",
+        "body": "The first three of eight connected workflow groups establish the property master, track sale/rental/lease states and organize commission and payment information. Together, the eight groups explain the 20+ workflow variants.",
         "detail": "The shared lifecycle was owner/builder/seller → listing → buyer/tenant prospect → viewing → transaction or no transaction → payment/commission status → lease support or sale registration/closure. My responsibility was the information, business rules, reporting and handoffs across that lifecycle; final commercial, accounting and legal authority remained with the authorized teams.",
         "motion": "inspect",
         "scene": {
@@ -202,7 +202,7 @@
         },
         "composition": {
           "id": "experience-opening-evidence",
-          "layout": "hero"
+          "layout": "desk"
         },
         "objects": [
           {
@@ -258,7 +258,34 @@
                 "Payment / cheque status"
               ]
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "workflow-commercial-review",
+        "title": "Track obligations, demand and exceptions.",
+        "body": "The next three workflow groups attach maintenance obligations to the right property, compare demand and market movement, and make unresolved cases visible.",
+        "detail": "I structured and reported the information needed to review long-unsold inventory, rental defaults, pending payments and maintenance follow-up. Management and finance retained final pricing, accounting and commercial authority.",
+        "motion": "inspect",
+        "scene": {
+          "asset": "/worlds/gias-scenes.png",
+          "columns": 2,
+          "rows": 2,
+          "frame": 0,
+          "artifacts": [
+            {
+              "label": "Standardized property records",
+              "kind": "record",
+              "detail": "Lookup logic, common status definitions and consistent fields."
+            }
+          ],
+          "aspect": 1.7768331562167907
+        },
+        "composition": {
+          "id": "experience-workflow-commercial-review",
+          "layout": "desk"
+        },
+        "objects": [
           {
             "name": "Property cost and maintenance obligations",
             "kind": "plan",
@@ -312,7 +339,34 @@
                 "Unresolved follow-up"
               ]
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "workflow-service",
+        "title": "Connect customer viewings to decision support.",
+        "body": "The final two workflow groups connect high-value customer viewings with the Excel/Tableau operating view used by management and finance. A separate viewing-service detail explains the people, timing and costs involved.",
+        "detail": "Unclosed visits still generated operating costs to track. I maintained the information and analysis layer; authorized decision-makers retained final commercial, pricing and finance authority.",
+        "motion": "inspect",
+        "scene": {
+          "asset": "/worlds/gias-scenes.png",
+          "columns": 2,
+          "rows": 2,
+          "frame": 2,
+          "artifacts": [
+            {
+              "label": "Excel & Tableau reporting",
+              "kind": "chart",
+              "detail": "Recurring filters, KPI views, visual summaries and review feedback."
+            }
+          ],
+          "aspect": 1.7768331562167907
+        },
+        "composition": {
+          "id": "experience-workflow-service",
+          "layout": "desk"
+        },
+        "objects": [
           {
             "name": "High-value customer viewing",
             "kind": "plan",
@@ -348,14 +402,32 @@
                 "Tableau / decision views"
               ]
             }
+          },
+          {
+            "name": "Viewing-service operations",
+            "kind": "record",
+            "format": "Operating-information view",
+            "detail": "High-value visits connected the customer, agent, property/location, rented vehicle, driver and appointment time. Vehicle, driver, fuel/service and scheduling costs could remain even when a visit did not close.",
+            "fields": [
+              "Payment and maintenance exceptions",
+              "Commercial review questions"
+            ],
+            "visualData": {
+              "type": "notes",
+              "title": "Viewing-service operations",
+              "content": [
+                "What viewing-service costs were incurred when a high-value visit did not close?",
+                "Customer → agent → property/location → rented vehicle → driver → appointment timing → service cost"
+              ]
+            }
           }
         ]
       },
       {
         "id": "chapter-2",
-        "title": "Make decision questions and exceptions visible.",
-        "body": "I structured and reported the information management needed to review inventory, demand, commercial terms and unresolved cases. The questions included which properties were sold, unsold, rented, leased or unresolved; where demand was rising or declining; and which locations, buildings or ownership arrangements needed follow-up.",
-        "detail": "The exception view covered long-unsold inventory, rental defaults, pending or uncleared cash/cheque transactions, maintenance obligations and unresolved cases. For high-value property visits, I also tracked the customer, agent, property/location, rented vehicle, driver, timing and service cost. Visits that did not close still incurred operating costs. These records supported decisions; they did not give me final pricing, finance or lending authority.",
+        "title": "Make inventory and payment questions visible.",
+        "body": "I structured the information used to review property availability, long-unsold inventory, location/building demand, payment states, maintenance obligations and commercial terms.",
+        "detail": "These question-led views supported management and finance review. They did not give me final property pricing, commission-policy, accounting or lending authority. Customer-viewing logistics and service-cost questions are covered in the preceding section.",
         "motion": "experience-2",
         "scene": {
           "asset": "/worlds/gias-scenes.png",
@@ -413,24 +485,6 @@
                 "Which cash/cheque transactions remain pending or uncleared?",
                 "Which maintenance obligations transfer with a property or lease?",
                 "Which properties, ownership structures or service cases need follow-up?"
-              ]
-            }
-          },
-          {
-            "name": "Viewing-service operations",
-            "kind": "record",
-            "format": "Operating-information view",
-            "detail": "High-value visits connected the customer, agent, property/location, rented vehicle, driver and appointment time. Vehicle, driver, fuel/service and scheduling costs could remain even when a visit did not close.",
-            "fields": [
-              "Payment and maintenance exceptions",
-              "Commercial review questions"
-            ],
-            "visualData": {
-              "type": "notes",
-              "title": "Viewing-service operations",
-              "content": [
-                "What viewing-service costs were incurred when a high-value visit did not close?",
-                "Customer → agent → property/location → rented vehicle → driver → appointment timing → service cost"
               ]
             }
           },

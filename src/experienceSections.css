@@ -1,0 +1,7 @@
+/* Experience cards select the detail directly below: at most three per section. */
+.experience-journey .workbench-object>small{display:none}
+@media(min-width:1101px){
+ .experience-journey .world-workbench .workbench-objects{grid-template-columns:repeat(3,minmax(0,1fr));min-height:0;row-gap:14px;margin-bottom:18px}
+ .experience-journey .world-workbench .workbench-readout{max-height:none;min-height:0;overflow:visible}
+}
+@media(max-height:650px){.experience-journey .section-rail button{min-height:28px;padding-block:5px}.experience-journey .section-rail{gap:0}}
